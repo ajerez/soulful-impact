@@ -59,7 +59,7 @@
 
   .font-heading {
     color: hsl(var(--heading));
-    letter-spacing: 0.08em;
+    letter-spacing: 0;
   }
 }
 
