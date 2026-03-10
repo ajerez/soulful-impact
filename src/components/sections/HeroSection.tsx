@@ -56,7 +56,7 @@ const HeroSection = () => {
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}
         transition={{ duration: 1, delay: 0.5 }}
-        className="absolute bottom-12 text-xs md:text-sm text-muted-foreground text-center max-w-md px-4"
+        className="absolute bottom-12 text-xl md:text-3xl text-center max-w-3xl leading-relaxed px-4"
       >
         Sigues aquí. Buena señal. Probablemente no te conformas con lo estándar.
       </motion.p>
