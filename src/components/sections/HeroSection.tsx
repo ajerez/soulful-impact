@@ -26,7 +26,7 @@ const HeroSection = () => {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1, delay: 1.6 }}
-          className="text-xl md:text-3xl font-semibold"
+          className="font-heading text-2xl md:text-4xl"
         >
           Y todo es terriblemente aburrido.
         </motion.p>

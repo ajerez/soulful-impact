@@ -20,7 +20,7 @@ const FinalFilter = () => {
           transition={{ duration: 0.8, delay: i * 0.15 }}
           className={`text-center max-w-3xl leading-relaxed ${
             i === lines.length - 1
-              ? "text-2xl md:text-4xl font-bold"
+              ? "font-heading text-3xl md:text-5xl"
               : "text-xl md:text-3xl font-light"
           }`}
         >

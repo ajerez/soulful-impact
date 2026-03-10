@@ -19,7 +19,7 @@ const CleanScreen5 = () => {
       </h2>
       <motion.h2
         style={{ opacity: fillOpacity }}
-        className="text-4xl md:text-7xl lg:text-9xl font-black text-center tracking-tighter"
+        className="font-heading text-4xl md:text-7xl lg:text-9xl text-center tracking-tighter"
       >
         EJECUTARLAS BIEN ES DISEÑO
       </motion.h2>

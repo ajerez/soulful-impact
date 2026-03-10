@@ -12,6 +12,10 @@ export default {
         "2xl": "1400px",
       },
     },
+    fontFamily: {
+      heading: ['"Bebas Neue"', 'system-ui', 'sans-serif'],
+      body: ['Electrolize', 'system-ui', 'sans-serif'],
+    },
     extend: {
       colors: {
         border: "hsl(var(--border))",

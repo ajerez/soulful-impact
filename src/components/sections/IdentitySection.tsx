@@ -17,7 +17,7 @@ const IdentitySection = () => {
           whileInView={{ opacity: 1, x: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 1 }}
-          className="text-5xl md:text-7xl lg:text-9xl font-black tracking-tighter"
+          className="font-heading text-5xl md:text-7xl lg:text-9xl tracking-tighter"
         >
           JUAN A. GIL
         </motion.h2>

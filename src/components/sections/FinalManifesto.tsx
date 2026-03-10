@@ -33,7 +33,7 @@ const FinalManifesto = () => {
         transition={{ duration: 0.8, delay: 0.8 }}
         className="mt-8"
       >
-        <button className="px-10 md:px-16 py-5 md:py-6 border-2 border-foreground text-foreground text-base md:text-xl tracking-[0.3em] uppercase font-bold hover:bg-foreground hover:text-background transition-all duration-500">
+        <button className="font-heading px-10 md:px-16 py-5 md:py-6 border-2 border-foreground text-foreground text-xl md:text-3xl tracking-[0.15em] uppercase hover:bg-foreground hover:text-background transition-all duration-500">
           QUE NO SEA MEDIOCRE
         </button>
       </motion.div>

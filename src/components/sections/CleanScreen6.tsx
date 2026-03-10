@@ -8,7 +8,7 @@ const CleanScreen6 = () => {
         whileInView={{ opacity: 1, scale: 1 }}
         viewport={{ once: true }}
         transition={{ duration: 1.2 }}
-        className="text-4xl md:text-7xl lg:text-9xl font-black text-center tracking-tighter"
+        className="font-heading text-4xl md:text-7xl lg:text-9xl text-center tracking-tighter"
       >
         Si no impacta, sobra.
       </motion.h2>
