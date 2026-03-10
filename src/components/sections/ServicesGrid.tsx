@@ -44,7 +44,7 @@ const ServiceCard = ({ title, desc, bg }: { title: string; desc: string; bg: str
       )}
       <div className="absolute inset-0 bg-black/70" />
       <div className="relative z-10 h-full flex flex-col justify-end p-6 md:p-8">
-        <h3 className="text-xl md:text-2xl font-bold mb-2">{title}</h3>
+        <h3 className="font-heading text-2xl md:text-3xl mb-2">{title}</h3>
         <p className="text-sm md:text-base text-muted-foreground leading-relaxed">{desc}</p>
       </div>
     </motion.div>

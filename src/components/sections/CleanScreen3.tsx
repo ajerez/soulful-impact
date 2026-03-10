@@ -12,7 +12,7 @@ const CleanScreen3 = () => {
         whileInView={{ opacity: 1 }}
         viewport={{ once: true }}
         transition={{ duration: 2, delay: 0.5 }}
-        className="relative z-10 text-2xl md:text-5xl lg:text-7xl font-bold text-center max-w-5xl px-6 leading-tight"
+        className="relative z-10 font-heading text-3xl md:text-5xl lg:text-7xl text-center max-w-5xl px-6 leading-tight"
       >
         Un buen espacio no solo se mira. Se recuerda.
       </motion.h2>

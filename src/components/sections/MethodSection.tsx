@@ -1,9 +1,9 @@
 import { motion } from "framer-motion";
 
 const lines = [
-  { text: "Impacto con estructura.", size: "text-2xl md:text-4xl lg:text-5xl font-bold" },
+  { text: "Impacto con estructura.", size: "font-heading text-3xl md:text-5xl lg:text-6xl" },
   { text: "Concepto antes que estética. Narrativa antes que decoración.", size: "text-xl md:text-3xl" },
-  { text: "Ejecución impecable.", size: "text-2xl md:text-4xl lg:text-5xl font-bold" },
+  { text: "Ejecución impecable.", size: "font-heading text-3xl md:text-5xl lg:text-6xl" },
   { text: "No es perfeccionismo. Es respeto por el resultado.", size: "text-xl md:text-3xl" },
 ];
 

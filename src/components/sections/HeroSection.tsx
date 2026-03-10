@@ -8,7 +8,7 @@ const HeroSection = () => {
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1, delay: 0.2 }}
-          className="text-4xl md:text-6xl lg:text-8xl font-bold tracking-tight"
+          className="font-heading text-5xl md:text-7xl lg:text-9xl tracking-tight md:-tracking-wider"
         >
           Vengo del futuro.
         </motion.h1>
@@ -26,7 +26,7 @@ const HeroSection = () => {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1, delay: 1.6 }}
-          className="text-xl md:text-3xl font-semibold"
+          className="font-heading text-2xl md:text-4xl"
         >
           Y todo es terriblemente aburrido.
         </motion.p>
