@@ -1,5 +1,11 @@
 import { motion } from "framer-motion";
 import GlitchImage from "../GlitchImage";
+import lab01 from "@/assets/lab-01.jpg";
+import lab02 from "@/assets/lab-02.jpg";
+import lab03 from "@/assets/lab-03.jpg";
+import lab04 from "@/assets/lab-04.jpg";
+import lab05 from "@/assets/lab-05.jpg";
+import lab06 from "@/assets/lab-06.png";
 
 const copyLines = [
   "Antes del futuro, hubo experimentos.",
@@ -10,12 +16,12 @@ const copyLines = [
 ];
 
 const experiments = [
-  { src: "https://images.unsplash.com/photo-1478720568477-152d9b164e26?w=600&q=80", caption: "Experimento 01: Construir tensión sin palabras" },
-  { src: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=600&q=80", caption: "Experimento 02: Disolver la frontera entre espectador y escena" },
-  { src: "https://images.unsplash.com/photo-1518005020951-eccb494ad742?w=600&q=80", caption: "Experimento 03: Narrativa a través de la oscuridad" },
-  { src: "https://images.unsplash.com/photo-1492684223066-81342ee5ff30?w=600&q=80", caption: "Experimento 04: Provocando la pérdida de la noción del tiempo" },
-  { src: "https://images.unsplash.com/photo-1541701494587-cb58502866ab?w=600&q=80", caption: "Experimento 05: Inmersión sensorial completa" },
-  { src: "https://images.unsplash.com/photo-1505765050516-f72dcac9c60e?w=600&q=80", caption: "Experimento 06: El espacio como personaje" },
+  { src: lab01, caption: "Experimento 01: Construir tensión sin palabras" },
+  { src: lab02, caption: "Experimento 02: Disolver la frontera entre espectador y escena" },
+  { src: lab03, caption: "Experimento 03: Narrativa a través de la oscuridad" },
+  { src: lab04, caption: "Experimento 04: Provocando la pérdida de la noción del tiempo" },
+  { src: lab05, caption: "Experimento 05: Inmersión sensorial completa" },
+  { src: lab06, caption: "Experimento 06: El espacio como personaje" },
 ];
 
 const LaboratorySection = () => {
