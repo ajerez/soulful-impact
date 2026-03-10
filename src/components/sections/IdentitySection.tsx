@@ -65,7 +65,7 @@ const IdentitySection = () => {
         className="flex-1 w-full max-w-lg md:max-w-none"
       >
         <GlitchImage
-          src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?w=900&q=80"
+          src={fotoJuan}
           alt="Creative director backstage"
           className="w-full h-[50vh] md:h-[80vh] rounded-sm"
         />

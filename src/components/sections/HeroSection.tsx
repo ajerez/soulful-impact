@@ -10,7 +10,7 @@ const HeroSection = () => {
           transition={{ duration: 1, delay: 0.2 }}
           className="font-heading text-5xl md:text-7xl lg:text-9xl tracking-tight md:-tracking-wider"
         >
-          Vengo del futuro.
+          Vengo del futuro
         </motion.h1>
 
         <motion.p
