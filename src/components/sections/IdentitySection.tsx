@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import GlitchImage from "../GlitchImage";
+import fotoJuan from "@/assets/foto-juan-dirigiendo.jpg";
 
 const staggerBlocks = [
   "Diseño espacios que cambian comportamientos.",
