@@ -14,7 +14,7 @@ const CleanScreen3 = () => {
         transition={{ duration: 2, delay: 0.5 }}
         className="relative z-10 font-heading text-3xl md:text-5xl lg:text-7xl text-center max-w-5xl px-6 leading-tight"
       >
-        Un buen espacio no solo se mira. Se recuerda.
+        Un buen espacio no solo se mira.<br />Se recuerda.
       </motion.h2>
     </section>
   );
