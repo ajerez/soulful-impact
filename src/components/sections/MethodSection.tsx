@@ -28,7 +28,7 @@ const MethodSection = () => {
         whileInView={{ opacity: 1 }}
         viewport={{ once: true }}
         transition={{ duration: 1, delay: 0.8 }}
-        className="text-xs text-muted-foreground text-center max-w-md mt-8"
+        className="text-xl md:text-3xl text-center max-w-4xl leading-relaxed mt-8"
       >
         Y evitar que una gran idea acabe pareciendo una feria temática de aeropuerto.
       </motion.p>
