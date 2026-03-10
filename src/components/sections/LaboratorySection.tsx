@@ -20,8 +20,8 @@ const experiments = [
   { src: lab02, caption: "Experimento 02: Disolver la frontera entre espectador y escena" },
   { src: lab03, caption: "Experimento 03: Narrativa a través de la oscuridad" },
   { src: lab04, caption: "Experimento 04: Provocando la pérdida de la noción del tiempo" },
-  { src: lab05, caption: "Experimento 05: Inmersión sensorial completa" },
-  { src: lab06, caption: "Experimento 06: El espacio como personaje" },
+  { src: lab06, caption: "Experimento 05: Inmersión sensorial completa" },
+  { src: lab05, caption: "Experimento 06: El espacio como personaje" },
 ];
 
 const LaboratorySection = () => {
