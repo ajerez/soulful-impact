@@ -10,7 +10,7 @@ const CleanScreen4 = () => {
         transition={{ duration: 2, delay: 0.5 }}
         className="font-heading text-3xl md:text-5xl lg:text-7xl text-center max-w-5xl leading-tight"
       >
-        El público no quiere más estímulos. Quiere significado.
+        El público no quiere más estímulos.<br />Quiere significado.
       </motion.h2>
     </section>
   );
