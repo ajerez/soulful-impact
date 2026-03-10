@@ -1,0 +1,67 @@
+import { motion } from "framer-motion";
+
+const HeroSection = () => {
+  return (
+    <section className="relative min-h-[110dvh] flex flex-col items-center justify-center px-6 md:px-12">
+      <div className="max-w-4xl text-center space-y-8">
+        <motion.h1
+          initial={{ opacity: 0, y: 30 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 1, delay: 0.2 }}
+          className="text-4xl md:text-6xl lg:text-8xl font-bold tracking-tight"
+        >
+          Vengo del futuro.
+        </motion.h1>
+
+        <motion.p
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 1, delay: 0.8 }}
+          className="text-lg md:text-2xl text-muted-foreground leading-relaxed"
+        >
+          Todo es perfecto. Todo es predecible. Todo es rentable. Todo es impecable.
+        </motion.p>
+
+        <motion.p
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 1, delay: 1.6 }}
+          className="text-xl md:text-3xl font-semibold"
+        >
+          Y todo es terriblemente aburrido.
+        </motion.p>
+
+        <motion.p
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 1, delay: 2.0 }}
+          className="text-lg md:text-2xl text-muted-foreground"
+        >
+          He vuelto antes de que eso pase.
+        </motion.p>
+
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8, delay: 2.8 }}
+        >
+          <button className="mt-8 px-8 py-4 border border-foreground text-foreground text-sm md:text-base tracking-[0.3em] uppercase hover:bg-foreground hover:text-background transition-all duration-500">
+            HAGAMOS ALGO REAL
+          </button>
+        </motion.div>
+      </div>
+
+      <motion.p
+        initial={{ opacity: 0, y: 30 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }}
+        transition={{ duration: 1, delay: 0.5 }}
+        className="absolute bottom-12 text-xs md:text-sm text-muted-foreground text-center max-w-md px-4"
+      >
+        Sigues aquí. Buena señal. Probablemente no te conformas con lo estándar.
+      </motion.p>
+    </section>
+  );
+};
+
+export default HeroSection;
