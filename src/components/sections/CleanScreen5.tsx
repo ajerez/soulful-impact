@@ -9,7 +9,7 @@ const CleanScreen5 = () => {
   return (
     <section ref={ref} className="min-h-[100dvh] flex flex-col items-center justify-center px-6 gap-6 md:gap-8">
       <h2
-        className="text-4xl md:text-7xl lg:text-9xl font-black text-center tracking-tighter"
+        className="font-heading text-4xl md:text-7xl lg:text-9xl text-center tracking-tighter"
         style={{
           WebkitTextStroke: "2px hsl(40 10% 90%)",
           color: "transparent",
