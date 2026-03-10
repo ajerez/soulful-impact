@@ -33,6 +33,7 @@
     --border: 0 0% 18%;
     --input: 0 0% 18%;
     --ring: 40 10% 90%;
+    --heading: 40 1% 65%;
 
     --radius: 0.5rem;
 
@@ -54,6 +55,11 @@
 
   body {
     @apply bg-background text-foreground font-body;
+  }
+
+  .font-heading {
+    color: hsl(var(--heading));
+    letter-spacing: 0.08em;
   }
 }
 
