@@ -1,0 +1,74 @@
+import { motion } from "framer-motion";
+import GlitchImage from "../GlitchImage";
+
+const copyLines = [
+  "Antes del futuro, hubo experimentos.",
+  "Escape rooms. Narrativas físicas. Entornos inmersivos.",
+  "No eran juegos. Eran pruebas de coherencia.",
+  "Con alma → la gente cambia. Con clichés → la gente hace fotos y luego pregunta dónde está la salida.",
+  "Yo diseño para lo primero.",
+];
+
+const experiments = [
+  { src: "https://images.unsplash.com/photo-1478720568477-152d9b164e26?w=600&q=80", caption: "Experimento 01: Construir tensión sin palabras" },
+  { src: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=600&q=80", caption: "Experimento 02: Disolver la frontera entre espectador y escena" },
+  { src: "https://images.unsplash.com/photo-1518005020951-eccb494ad742?w=600&q=80", caption: "Experimento 03: Narrativa a través de la oscuridad" },
+  { src: "https://images.unsplash.com/photo-1492684223066-81342ee5ff30?w=600&q=80", caption: "Experimento 04: Provocando la pérdida de la noción del tiempo" },
+  { src: "https://images.unsplash.com/photo-1541701494587-cb58502866ab?w=600&q=80", caption: "Experimento 05: Inmersión sensorial completa" },
+  { src: "https://images.unsplash.com/photo-1505765050516-f72dcac9c60e?w=600&q=80", caption: "Experimento 06: El espacio como personaje" },
+];
+
+const LaboratorySection = () => {
+  return (
+    <section className="min-h-[130dvh] px-6 md:px-12 lg:px-24 py-24">
+      {/* Copy */}
+      <div className="max-w-3xl mx-auto mb-20 space-y-6">
+        {copyLines.map((line, i) => (
+          <motion.p
+            key={i}
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.8, delay: i * 0.15 }}
+            className="text-lg md:text-2xl leading-relaxed"
+          >
+            {line}
+          </motion.p>
+        ))}
+      </div>
+
+      {/* Gallery */}
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
+        {experiments.map((exp, i) => (
+          <motion.div
+            key={i}
+            initial={{ opacity: 0, y: 50 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, amount: 0.3 }}
+            transition={{ duration: 0.8, delay: i * 0.1 }}
+          >
+            <GlitchImage src={exp.src} alt={exp.caption} className="w-full h-64 md:h-80" />
+            <p className="font-mono text-xs text-muted-foreground mt-3 tracking-wide">
+              {exp.caption}
+            </p>
+          </motion.div>
+        ))}
+      </div>
+
+      {/* CTA */}
+      <motion.div
+        initial={{ opacity: 0, y: 30 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }}
+        transition={{ duration: 0.8, delay: 0.3 }}
+        className="flex justify-center mt-20"
+      >
+        <button className="px-10 py-4 border border-foreground text-foreground text-sm tracking-[0.3em] uppercase hover:bg-foreground hover:text-background hover:shadow-[0_0_30px_rgba(255,255,255,0.15)] transition-all duration-500">
+          HABLEMOS
+        </button>
+      </motion.div>
+    </section>
+  );
+};
+
+export default LaboratorySection;
