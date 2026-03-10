@@ -56,6 +56,11 @@
   body {
     @apply bg-background text-foreground font-body;
   }
+
+  .font-heading {
+    color: hsl(var(--heading));
+    letter-spacing: 0.08em;
+  }
 }
 
 /* Film Grain Overlay */
