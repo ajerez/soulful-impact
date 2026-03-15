@@ -20,9 +20,9 @@ const CleanScreen1 = () => {
         </motion.p>
         <motion.p
           style={{ opacity: opacity2, scale: scale2 }}
-          className="font-heading text-3xl md:text-5xl lg:text-7xl"
+          className="font-heading text-3xl md:text-5xl lg:text-7xl whitespace-pre-line"
         >
-          La creatividad no murió. Se volvió eficiente.
+          La creatividad no murió.{"\n"}Se volvió eficiente.
         </motion.p>
       </div>
     </section>

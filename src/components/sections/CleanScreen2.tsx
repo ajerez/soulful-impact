@@ -14,9 +14,9 @@ const CleanScreen2 = () => {
         whileInView={{ opacity: 1 }}
         viewport={{ once: true }}
         transition={{ duration: 1.5 }}
-        className="font-heading text-3xl md:text-5xl lg:text-7xl text-center max-w-5xl leading-tight"
+        className="font-heading text-3xl md:text-5xl lg:text-7xl text-center max-w-5xl leading-tight whitespace-pre-line"
       >
-        Diseñar no es decorar. Es decidir qué importa.
+        Diseñar no es decorar.{"\n"}Es decidir qué importa.
       </motion.h2>
     </section>
   );

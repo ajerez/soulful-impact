@@ -28,7 +28,7 @@ const IdentitySection = () => {
           whileInView={{ opacity: 1, x: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.8, delay: 0.2 }}
-          className="text-lg md:text-xl text-muted-foreground leading-relaxed"
+          className="text-muted-foreground leading-relaxed" style={{ fontSize: "1.5rem" }}
         >
           Director creativo especializado en experiencias inmersivas
         </motion.p>
@@ -40,7 +40,7 @@ const IdentitySection = () => {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.8, delay: 0.4 + i * 0.2 }}
-            className="text-lg md:text-xl leading-relaxed"
+            className="leading-relaxed" style={{ fontSize: "1.5rem" }}
           >
             {text}
           </motion.p>
@@ -63,7 +63,7 @@ const IdentitySection = () => {
         whileInView={{ opacity: 1, scale: 1 }}
         viewport={{ once: true }}
         transition={{ duration: 1.2, delay: 0.3 }}
-        className="flex-1 w-full max-w-lg md:max-w-none"
+        className="flex-1 w-full max-w-lg md:max-w-none self-start md:self-center"
       >
         <GlitchImage
           src={fotoJuan}
