@@ -36,7 +36,7 @@ const LaboratorySection = () => {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.8, delay: i * 0.15 }}
-            className="text-lg md:text-2xl leading-relaxed"
+            className="text-lg md:text-2xl leading-relaxed whitespace-pre-line"
           >
             {line}
           </motion.p>
