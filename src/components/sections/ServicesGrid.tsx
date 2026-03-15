@@ -7,14 +7,14 @@ import disenoVisual from "@/assets/diseno-visual.png";
 import disenoEspacios from "@/assets/diseno-espacios.png";
 
 const services = [
-  { title: "Consultoría de Impacto", desc: "Tu proyecto tiene una grieta. Yo la encuentro y la convierto en el motor del concepto.", bg: charlando },
-  { title: "Dirección Creativa de Eventos", desc: "No organizo citas. Diseño clímax narrativos.", bg: costaAzucar },
-  { title: "Diseño Visual", desc: "La estética no es un adorno. Es el lenguaje del subconsciente.", bg: disenoVisual },
-  { title: "Narrativa", desc: "Si el espacio no cuenta una historia, solo es un pasillo.", bg: narrativaBg },
-  { title: "Diseño de Espacios", desc: "Locales que no se visitan. Se habitan.", bg: disenoEspacios },
+  { title: "Consultoría de Impacto", desc: "Tu proyecto tiene una grieta. Yo la encuentro y la convierto en el motor del concepto.", bg: charlando, bgPos: "center" },
+  { title: "Dirección Creativa de Eventos", desc: "No organizo citas. Diseño clímax narrativos.", bg: costaAzucar, bgPos: "center" },
+  { title: "Diseño Visual", desc: "La estética no es un adorno. Es el lenguaje del subconsciente.", bg: disenoVisual, bgPos: "bottom" },
+  { title: "Narrativa", desc: "Si el espacio no cuenta una historia, solo es un pasillo.", bg: narrativaBg, bgPos: "center" },
+  { title: "Diseño de Espacios", desc: "Locales que no se visitan. Se habitan.", bg: disenoEspacios, bgPos: "center" },
 ];
 
-const ServiceCard = ({ title, desc, bg }: { title: string; desc: string; bg: string }) => {
+const ServiceCard = ({ title, desc, bg, bgPos }: { title: string; desc: string; bg: string; bgPos: string }) => {
   const [hovered, setHovered] = useState(false);
 
   return (
