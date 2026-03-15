@@ -20,7 +20,7 @@ const IdentitySection = () => {
           transition={{ duration: 1 }}
           className="font-heading text-5xl md:text-7xl lg:text-9xl tracking-tighter"
         >
-          JUAN A. GIL
+          JUAN A. GIL DEL POZO
         </motion.h2>
 
         <motion.p
