@@ -40,7 +40,7 @@ const IdentitySection = () => {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.8, delay: 0.4 + i * 0.2 }}
-            className="text-lg md:text-xl leading-relaxed"
+            className="leading-relaxed" style={{ fontSize: "1.5rem" }}
           >
             {text}
           </motion.p>
