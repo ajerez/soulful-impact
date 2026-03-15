@@ -11,7 +11,7 @@ const copyLines = [
   "Antes del futuro, hubo experimentos.",
   "Escape rooms. Narrativas físicas. Entornos inmersivos.",
   "No eran juegos. Eran pruebas de coherencia.",
-  "Con alma → la gente cambia. Con clichés → la gente hace fotos y luego pregunta dónde está la salida.",
+  "Con alma → la gente cambia.\nCon clichés → la gente hace fotos y luego pregunta dónde está la salida.",
   "Yo diseño para lo primero.",
 ];
 
