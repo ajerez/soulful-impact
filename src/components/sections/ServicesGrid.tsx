@@ -28,9 +28,10 @@ const ServiceCard = ({ title, desc, bg, bgPos }: { title: string; desc: string; 
       onMouseLeave={() => setHovered(false)}
     >
       <div
-        className="absolute inset-0 bg-cover bg-center contrast-125 transition-transform duration-700"
+        className="absolute inset-0 bg-cover contrast-125 transition-transform duration-700"
         style={{
           backgroundImage: `url(${bg})`,
+          backgroundPosition: bgPos,
           transform: hovered ? "scale(1.05)" : "scale(1)",
           filter: "grayscale(75%)",
         }}
