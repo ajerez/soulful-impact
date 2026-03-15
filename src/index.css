@@ -51,6 +51,7 @@
 @layer base {
   * {
     @apply border-border;
+    letter-spacing: 0 !important;
   }
 
   body {
@@ -59,7 +60,6 @@
 
   .font-heading {
     color: hsl(var(--heading));
-    letter-spacing: 0;
   }
 }
 
