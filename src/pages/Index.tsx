@@ -1,4 +1,5 @@
 import FilmGrainOverlay from "@/components/FilmGrainOverlay";
+import CinematicSection from "@/components/CinematicSection";
 import HeroSection from "@/components/sections/HeroSection";
 import CleanScreen1 from "@/components/sections/CleanScreen1";
 import AntagonistSection from "@/components/sections/AntagonistSection";
@@ -20,22 +21,70 @@ const Index = () => {
   return (
     <div className="overflow-x-hidden">
       <FilmGrainOverlay />
-      <HeroSection />
-      <CleanScreen1 />
-      <AntagonistSection />
-      <IdentitySection />
-      <CleanScreen2 />
-      <LaboratorySection />
-      <CleanScreen3 />
-      <ManifestoSection />
-      <CleanScreen4 />
-      <ServicesGrid />
-      <MethodSection />
-      <CleanScreen5 />
-      <QuestionsSection />
-      <FinalFilter />
-      <CleanScreen6 />
-      <FinalManifesto />
+
+      <CinematicSection topTransition="none" bottomTransition="heavy">
+        <HeroSection />
+      </CinematicSection>
+
+      <CinematicSection topTransition="fade" bottomTransition="heavy">
+        <CleanScreen1 />
+      </CinematicSection>
+
+      <CinematicSection topTransition="heavy" bottomTransition="heavy">
+        <AntagonistSection />
+      </CinematicSection>
+
+      <CinematicSection topTransition="diagonal" bottomTransition="fade">
+        <IdentitySection />
+      </CinematicSection>
+
+      <CinematicSection topTransition="fade" bottomTransition="fade">
+        <CleanScreen2 />
+      </CinematicSection>
+
+      <CinematicSection topTransition="curve" bottomTransition="heavy">
+        <LaboratorySection />
+      </CinematicSection>
+
+      <CinematicSection topTransition="fade" bottomTransition="fade">
+        <CleanScreen3 />
+      </CinematicSection>
+
+      <CinematicSection topTransition="fade" bottomTransition="diagonal">
+        <ManifestoSection />
+      </CinematicSection>
+
+      <CinematicSection topTransition="fade" bottomTransition="fade">
+        <CleanScreen4 />
+      </CinematicSection>
+
+      <CinematicSection topTransition="heavy" bottomTransition="curve">
+        <ServicesGrid />
+      </CinematicSection>
+
+      <CinematicSection topTransition="fade" bottomTransition="fade">
+        <MethodSection />
+      </CinematicSection>
+
+      <CinematicSection topTransition="fade" bottomTransition="fade">
+        <CleanScreen5 />
+      </CinematicSection>
+
+      <CinematicSection topTransition="diagonal" bottomTransition="fade">
+        <QuestionsSection />
+      </CinematicSection>
+
+      <CinematicSection topTransition="fade" bottomTransition="heavy">
+        <FinalFilter />
+      </CinematicSection>
+
+      <CinematicSection topTransition="fade" bottomTransition="fade">
+        <CleanScreen6 />
+      </CinematicSection>
+
+      <CinematicSection topTransition="curve" bottomTransition="none">
+        <FinalManifesto />
+      </CinematicSection>
     </div>
   );
 };
