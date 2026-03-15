@@ -40,9 +40,19 @@ const Header = () => {
           {/* Logo */}
           <button
             onClick={() => scrollTo("top")}
-            className="font-body text-sm tracking-widest uppercase text-foreground hover:text-[#C49A45] transition-colors duration-300"
+            className="text-foreground hover:text-[#C49A45] transition-colors duration-300 w-9 h-9 md:w-11 md:h-11"
+            aria-label="Volver arriba"
           >
-            JUAN A. GIL
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="100%" height="100%" fill="none" className="w-full h-full">
+              <g stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="3">
+                <circle cx="35" cy="25" r="3" />
+                <path d="M34 29 L31 40 L65 31" />
+                <path d="M49 42 C49 32, 55 20, 80 15 C65 25, 49 42, 49 42" fill="currentColor" />
+                <circle cx="51" cy="48" r="6" fill="currentColor" />
+                <path d="M51 54 L65 85" strokeWidth="4"/>
+                <path d="M22 55 C10 55, 10 75, 20 75 C30 75, 40 65, 54 65" />
+              </g>
+            </svg>
           </button>
 
           {/* Desktop nav */}
