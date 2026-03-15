@@ -15,7 +15,7 @@ const GlitchImage = ({ src, alt, className = "" }: GlitchImageProps) => {
       onMouseEnter={() => setHovered(true)}
       onMouseLeave={() => setHovered(false)}
     >
-      <img src={src} alt={alt} className="w-full h-full object-cover grayscale contrast-125" />
+      <img src={src} alt={alt} className="w-full h-full object-cover contrast-125" style={{ filter: "grayscale(75%)" }} />
       {hovered && (
         <>
           <img
