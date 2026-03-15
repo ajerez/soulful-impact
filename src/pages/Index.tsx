@@ -1,3 +1,4 @@
+import Header from "@/components/Header";
 import FilmGrainOverlay from "@/components/FilmGrainOverlay";
 import CinematicSection from "@/components/CinematicSection";
 import HeroSection from "@/components/sections/HeroSection";
