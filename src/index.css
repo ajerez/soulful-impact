@@ -106,3 +106,146 @@
 .smoke-bg {
   background: radial-gradient(ellipse at center, hsl(0 0% 8%) 0%, hsl(0 0% 3%) 70%);
 }
+
+/* ── Cinematic Section Transitions ── */
+
+.cinematic-section {
+  position: relative;
+  overflow: hidden;
+}
+
+.cinematic-edge {
+  position: absolute;
+  left: 0;
+  right: 0;
+  pointer-events: none;
+  z-index: 20;
+}
+
+/* ─ Fade (default) ─ */
+.cinematic-edge--fade-top {
+  top: 0;
+  height: 120px;
+  background: linear-gradient(
+    to bottom,
+    hsl(0 0% 3% / 1) 0%,
+    hsl(0 0% 3% / 0.7) 30%,
+    hsl(0 0% 3% / 0.3) 60%,
+    transparent 100%
+  );
+}
+
+.cinematic-edge--fade-bottom {
+  bottom: 0;
+  height: 120px;
+  background: linear-gradient(
+    to top,
+    hsl(0 0% 3% / 1) 0%,
+    hsl(0 0% 3% / 0.7) 30%,
+    hsl(0 0% 3% / 0.3) 60%,
+    transparent 100%
+  );
+}
+
+/* ─ Heavy fade (for stronger breaks) ─ */
+.cinematic-edge--heavy-top {
+  top: 0;
+  height: 180px;
+  background: linear-gradient(
+    to bottom,
+    hsl(0 0% 3% / 1) 0%,
+    hsl(0 0% 3% / 0.85) 35%,
+    hsl(0 0% 3% / 0.4) 65%,
+    transparent 100%
+  );
+  backdrop-filter: blur(1px);
+}
+
+.cinematic-edge--heavy-bottom {
+  bottom: 0;
+  height: 180px;
+  background: linear-gradient(
+    to top,
+    hsl(0 0% 3% / 1) 0%,
+    hsl(0 0% 3% / 0.85) 35%,
+    hsl(0 0% 3% / 0.4) 65%,
+    transparent 100%
+  );
+  backdrop-filter: blur(1px);
+}
+
+/* ─ Diagonal ─ */
+.cinematic-edge--diagonal-top {
+  top: -1px;
+  height: 100px;
+  background: hsl(0 0% 3%);
+  clip-path: polygon(0 0, 100% 0, 100% 40%, 0 100%);
+}
+
+.cinematic-edge--diagonal-bottom {
+  bottom: -1px;
+  height: 100px;
+  background: hsl(0 0% 3%);
+  clip-path: polygon(0 60%, 100% 0, 100% 100%, 0 100%);
+}
+
+/* ─ Curve ─ */
+.cinematic-edge--curve-top {
+  top: -1px;
+  height: 80px;
+  background: hsl(0 0% 3%);
+  clip-path: ellipse(55% 100% at 50% 0%);
+}
+
+.cinematic-edge--curve-bottom {
+  bottom: -1px;
+  height: 80px;
+  background: hsl(0 0% 3%);
+  clip-path: ellipse(55% 100% at 50% 100%);
+}
+
+/* ─ Edge grain ─ */
+.cinematic-grain-edge {
+  position: absolute;
+  left: 0;
+  right: 0;
+  height: 60px;
+  pointer-events: none;
+  z-index: 21;
+  opacity: 0.06;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)'/%3E%3C/svg%3E");
+  background-repeat: repeat;
+  mix-blend-mode: overlay;
+}
+
+.cinematic-grain-edge--top {
+  top: 0;
+  mask-image: linear-gradient(to bottom, black, transparent);
+  -webkit-mask-image: linear-gradient(to bottom, black, transparent);
+}
+
+.cinematic-grain-edge--bottom {
+  bottom: 0;
+  mask-image: linear-gradient(to top, black, transparent);
+  -webkit-mask-image: linear-gradient(to top, black, transparent);
+}
+
+/* ─ Responsive adjustments ─ */
+@media (max-width: 768px) {
+  .cinematic-edge--fade-top,
+  .cinematic-edge--fade-bottom {
+    height: 80px;
+  }
+  .cinematic-edge--heavy-top,
+  .cinematic-edge--heavy-bottom {
+    height: 100px;
+  }
+  .cinematic-edge--diagonal-top,
+  .cinematic-edge--diagonal-bottom {
+    height: 60px;
+  }
+  .cinematic-edge--curve-top,
+  .cinematic-edge--curve-bottom {
+    height: 50px;
+  }
+}
