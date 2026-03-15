@@ -8,7 +8,7 @@ const lines = [
 
 const FinalManifesto = () => {
   return (
-    <section className="min-h-[110dvh] flex flex-col items-center justify-center px-6 md:px-12 py-24 gap-10 md:gap-14">
+    <section id="hablemos" className="min-h-[110dvh] flex flex-col items-center justify-center px-6 md:px-12 py-24 gap-10 md:gap-14">
       {lines.map((text, i) => (
         <motion.p
           key={i}

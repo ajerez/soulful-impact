@@ -10,7 +10,7 @@ const staggerBlocks = [
 
 const IdentitySection = () => {
   return (
-    <section className="min-h-[110dvh] flex flex-col md:flex-row items-center px-6 md:px-12 lg:px-24 py-24 gap-12 md:gap-16">
+    <section id="identidad" className="min-h-[110dvh] flex flex-col md:flex-row items-center px-6 md:px-12 lg:px-24 py-24 gap-12 md:gap-16">
       {/* Left - Text */}
       <div className="flex-1 flex flex-col justify-center space-y-8">
         <motion.h2

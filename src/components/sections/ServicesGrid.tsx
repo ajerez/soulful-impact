@@ -85,7 +85,7 @@ const ServiceCard = ({ title, desc, bg, bgPos }: { title: string; desc: string; 
 
 const ServicesGrid = () => {
   return (
-    <section className="min-h-[150dvh] px-6 md:px-12 lg:px-24 py-24 flex flex-col justify-center">
+    <section id="servicios" className="min-h-[150dvh] px-6 md:px-12 lg:px-24 py-24 flex flex-col justify-center">
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8">
         {services.map((s, i) => (
           <ServiceCard key={i} {...s} />

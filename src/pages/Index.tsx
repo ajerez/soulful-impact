@@ -21,6 +21,7 @@ import FinalManifesto from "@/components/sections/FinalManifesto";
 const Index = () => {
   return (
     <div className="overflow-x-hidden">
+      <Header />
       <FilmGrainOverlay />
 
       <CinematicSection topTransition="none" bottomTransition="heavy">
