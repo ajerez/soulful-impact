@@ -44,8 +44,8 @@ const ServiceCard = ({ title, desc, bg }: { title: string; desc: string; bg: str
       )}
       <div className="absolute inset-0 bg-black/70" />
       <div className="relative z-10 h-full flex flex-col justify-end p-6 md:p-8">
-        <h3 className="font-heading text-2xl md:text-3xl mb-2">{title}</h3>
-        <p className="text-sm md:text-base text-muted-foreground leading-relaxed">{desc}</p>
+        <h3 className="font-heading mb-2" style={{ fontSize: "2.8rem" }}>{title}</h3>
+        <p className="leading-relaxed" style={{ fontSize: "1.2rem", color: "hsl(var(--heading))" }}>{desc}</p>
       </div>
     </motion.div>
   );
