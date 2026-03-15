@@ -28,7 +28,7 @@ const IdentitySection = () => {
           whileInView={{ opacity: 1, x: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.8, delay: 0.2 }}
-          className="text-lg md:text-xl text-muted-foreground leading-relaxed"
+          className="text-muted-foreground leading-relaxed" style={{ fontSize: "1.5rem" }}
         >
           Director creativo especializado en experiencias inmersivas
         </motion.p>
