@@ -11,7 +11,7 @@ const copyLines = [
   "Antes del futuro, hubo experimentos.",
   "Escape rooms. Narrativas físicas. Entornos inmersivos.",
   "No eran juegos. Eran pruebas de coherencia.",
-  "Con alma → la gente cambia. Con clichés → la gente hace fotos y luego pregunta dónde está la salida.",
+  "Con alma → la gente cambia.\nCon clichés → la gente hace fotos y luego pregunta dónde está la salida.",
   "Yo diseño para lo primero.",
 ];
 
@@ -36,7 +36,7 @@ const LaboratorySection = () => {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.8, delay: i * 0.15 }}
-            className="text-lg md:text-2xl leading-relaxed"
+            className="text-lg md:text-2xl leading-relaxed whitespace-pre-line"
           >
             {line}
           </motion.p>
