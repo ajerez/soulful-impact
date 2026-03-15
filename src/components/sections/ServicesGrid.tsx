@@ -39,9 +39,10 @@ const ServiceCard = ({ title, desc, bg, bgPos }: { title: string; desc: string; 
       {hovered && (
         <>
           <div
-            className="absolute inset-0 bg-cover bg-center opacity-50"
+            className="absolute inset-0 bg-cover opacity-50"
             style={{
               backgroundImage: `url(${bg})`,
+              backgroundPosition: bgPos,
               mixBlendMode: "multiply",
               filter: "hue-rotate(90deg) saturate(3)",
               animation: "glitch-1 0.3s infinite linear",
