@@ -1,12 +1,17 @@
 import { motion } from "framer-motion";
 import { useState } from "react";
+import charlando from "@/assets/charlando.jpg";
+import costaAzucar from "@/assets/costa-azucar.png";
+import narrativaBg from "@/assets/narrativa-bg.png";
+import disenoVisual from "@/assets/diseno-visual.png";
+import disenoEspacios from "@/assets/diseno-espacios.png";
 
 const services = [
-  { title: "Consultoría de Impacto", desc: "Tu proyecto tiene una grieta. Yo la encuentro y la convierto en el motor del concepto.", bg: "https://images.unsplash.com/photo-1558618666-fcd25c85f82e?w=800&q=80" },
-  { title: "Dirección Creativa de Eventos", desc: "No organizo citas. Diseño clímax narrativos.", bg: "https://images.unsplash.com/photo-1492684223066-81342ee5ff30?w=800&q=80" },
-  { title: "Diseño Visual", desc: "La estética no es un adorno. Es el lenguaje del subconsciente.", bg: "https://images.unsplash.com/photo-1561070791-2526d30994b5?w=800&q=80" },
-  { title: "Narrativa", desc: "Si el espacio no cuenta una historia, solo es un pasillo.", bg: "https://images.unsplash.com/photo-1456513080510-7bf3a84b82f8?w=800&q=80" },
-  { title: "Diseño de Espacios", desc: "Locales que no se visitan. Se habitan.", bg: "https://images.unsplash.com/photo-1497366216548-37526070297c?w=800&q=80" },
+  { title: "Consultoría de Impacto", desc: "Tu proyecto tiene una grieta. Yo la encuentro y la convierto en el motor del concepto.", bg: charlando },
+  { title: "Dirección Creativa de Eventos", desc: "No organizo citas. Diseño clímax narrativos.", bg: costaAzucar },
+  { title: "Diseño Visual", desc: "La estética no es un adorno. Es el lenguaje del subconsciente.", bg: disenoVisual },
+  { title: "Narrativa", desc: "Si el espacio no cuenta una historia, solo es un pasillo.", bg: narrativaBg },
+  { title: "Diseño de Espacios", desc: "Locales que no se visitan. Se habitan.", bg: disenoEspacios },
 ];
 
 const ServiceCard = ({ title, desc, bg }: { title: string; desc: string; bg: string }) => {
