@@ -53,7 +53,7 @@ const HeroSection = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 2.8 }}
         >
-          <button className="mt-8 px-8 py-4 border border-foreground text-foreground text-sm md:text-base tracking-[0.3em] uppercase hover:bg-foreground hover:text-background transition-all duration-500">
+          <button className="mt-8 font-heading px-10 md:px-16 py-5 md:py-6 border-2 border-foreground text-foreground text-xl md:text-3xl uppercase hover:bg-foreground hover:text-background transition-all duration-500">
             HAGAMOS ALGO REAL
           </button>
         </motion.div>
