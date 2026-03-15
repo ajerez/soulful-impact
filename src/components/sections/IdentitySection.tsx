@@ -51,9 +51,10 @@ const IdentitySection = () => {
           whileInView={{ opacity: 1 }}
           viewport={{ once: true }}
           transition={{ duration: 1, delay: 1.2 }}
-          className="text-xl md:text-3xl lg:text-4xl text-center max-w-3xl leading-relaxed pt-8"
+          className="text-center max-w-3xl leading-relaxed pt-8 text-muted-foreground"
+          style={{ fontSize: "1.5rem" }}
         >
-          Si sigues aquí, probablemente no buscas algo estándar.
+          Hay quien mira la escena. Tú has entrado en ella.
         </motion.p>
       </div>
 
