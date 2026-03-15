@@ -7,10 +7,30 @@ import disenoVisual from "@/assets/diseno-visual.png";
 import disenoEspacios from "@/assets/diseno-espacios.png";
 
 const services = [
-  { title: "Consultoría de Impacto", desc: "Tu proyecto tiene una grieta. Yo la encuentro y la convierto en el motor del concepto.", bg: charlando, bgPos: "center" },
-  { title: "Dirección Creativa de Eventos", desc: "No organizo citas. Diseño clímax narrativos.", bg: costaAzucar, bgPos: "bottom" },
-  { title: "Diseño Visual", desc: "La estética no es un adorno. Es el lenguaje del subconsciente.", bg: disenoVisual, bgPos: "bottom" },
-  { title: "Narrativa", desc: "Si el espacio no cuenta una historia, solo es un pasillo.", bg: narrativaBg, bgPos: "center" },
+  {
+    title: "Consultoría de Impacto",
+    desc: "Tu proyecto tiene una grieta. Yo la encuentro y la convierto en el motor del concepto.",
+    bg: charlando,
+    bgPos: "center",
+  },
+  {
+    title: "Dirección Creativa de Eventos",
+    desc: "No organizo citas. Diseño clímax narrativos.",
+    bg: costaAzucar,
+    bgPos: "top",
+  },
+  {
+    title: "Diseño Visual",
+    desc: "La estética no es un adorno. Es el lenguaje del subconsciente.",
+    bg: disenoVisual,
+    bgPos: "bottom",
+  },
+  {
+    title: "Narrativa",
+    desc: "Si el espacio no cuenta una historia, solo es un pasillo.",
+    bg: narrativaBg,
+    bgPos: "center",
+  },
   { title: "Diseño de Espacios", desc: "Locales que no se visitan. Se habitan.", bg: disenoEspacios, bgPos: "center" },
 ];
 
@@ -52,8 +72,12 @@ const ServiceCard = ({ title, desc, bg, bgPos }: { title: string; desc: string; 
       )}
       <div className="absolute inset-0 bg-black/70" />
       <div className="relative z-10 h-full flex flex-col justify-end p-6 md:p-8">
-        <h3 className="font-heading mb-2" style={{ fontSize: "2.8rem" }}>{title}</h3>
-        <p className="leading-relaxed" style={{ fontSize: "1.2rem", color: "hsl(var(--heading))" }}>{desc}</p>
+        <h3 className="font-heading mb-2" style={{ fontSize: "2.8rem" }}>
+          {title}
+        </h3>
+        <p className="leading-relaxed" style={{ fontSize: "1.2rem", color: "hsl(var(--heading))" }}>
+          {desc}
+        </p>
       </div>
     </motion.div>
   );
