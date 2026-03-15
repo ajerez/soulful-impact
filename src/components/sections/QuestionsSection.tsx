@@ -29,8 +29,7 @@ const QuestionsSection = () => {
         whileInView={{ opacity: 1 }}
         viewport={{ once: true }}
         transition={{ duration: 1, delay: 0.6 }}
-        className="text-center max-w-3xl leading-relaxed mt-8 text-muted-foreground"
-        style={{ fontSize: "1.5rem" }}
+        className="text-xl md:text-3xl lg:text-4xl text-center max-w-3xl leading-relaxed mt-8"
       >
         Si alguna te incomoda, vamos bien.
       </motion.p>

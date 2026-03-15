@@ -43,8 +43,7 @@ const FinalManifesto = () => {
         whileInView={{ opacity: 1 }}
         viewport={{ once: true }}
         transition={{ duration: 1, delay: 1.2 }}
-        className="text-center max-w-4xl leading-relaxed mt-12 text-muted-foreground"
-        style={{ fontSize: "1.5rem" }}
+        className="text-xl md:text-3xl lg:text-4xl text-center max-w-4xl leading-relaxed mt-12"
       >
         Si has llegado hasta aquí, ya somos dos que pensamos parecido.
       </motion.p>
