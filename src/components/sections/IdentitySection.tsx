@@ -63,7 +63,7 @@ const IdentitySection = () => {
         whileInView={{ opacity: 1, scale: 1 }}
         viewport={{ once: true }}
         transition={{ duration: 1.2, delay: 0.3 }}
-        className="flex-1 w-full max-w-lg md:max-w-none"
+        className="flex-1 w-full max-w-lg md:max-w-none self-start md:self-center"
       >
         <GlitchImage
           src={fotoJuan}
