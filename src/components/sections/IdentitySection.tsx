@@ -52,7 +52,7 @@ const IdentitySection = () => {
           viewport={{ once: true }}
           transition={{ duration: 1, delay: 1.2 }}
           className="text-center max-w-3xl leading-relaxed pt-8"
-          style={{ fontSize: "1.5rem", color: "#DAA520" }}
+          style={{ fontSize: "1.5rem", color: "#C2B280" }}
         >
           Hay quien mira la escena. Tú has entrado en ella.
         </motion.p>

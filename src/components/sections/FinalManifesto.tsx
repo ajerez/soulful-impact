@@ -44,7 +44,7 @@ const FinalManifesto = () => {
         viewport={{ once: true }}
         transition={{ duration: 1, delay: 1.2 }}
         className="text-center max-w-4xl leading-relaxed mt-12"
-        style={{ fontSize: "1.5rem", color: "#DAA520" }}
+        style={{ fontSize: "1.5rem", color: "#C2B280" }}
       >
         Si has llegado hasta aquí, ya somos dos que pensamos parecido.
       </motion.p>

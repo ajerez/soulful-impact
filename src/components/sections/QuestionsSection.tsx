@@ -30,7 +30,7 @@ const QuestionsSection = () => {
         viewport={{ once: true }}
         transition={{ duration: 1, delay: 0.6 }}
         className="text-center max-w-3xl leading-relaxed mt-8"
-        style={{ fontSize: "1.5rem", color: "#DAA520" }}
+        style={{ fontSize: "1.5rem", color: "#C2B280" }}
       >
         Si alguna te incomoda, vamos bien.
       </motion.p>
