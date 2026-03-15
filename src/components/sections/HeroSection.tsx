@@ -53,7 +53,7 @@ const HeroSection = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 2.8 }}
         >
-          <button className="mt-8 font-heading px-10 md:px-16 py-5 md:py-6 border-2 border-foreground text-foreground text-xl md:text-3xl uppercase hover:bg-foreground hover:text-background transition-all duration-500">
+          <button className="mt-8 font-heading px-10 md:px-16 py-5 md:py-6 border-2 border-foreground text-foreground uppercase hover:bg-foreground hover:text-background transition-all duration-500" style={{ fontSize: "2rem" }}>
             HAGAMOS ALGO REAL
           </button>
         </motion.div>
@@ -64,7 +64,7 @@ const HeroSection = () => {
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}
         transition={{ duration: 1, delay: 0.5 }}
-        className="absolute bottom-12 text-xl md:text-3xl text-center max-w-3xl leading-relaxed px-4"
+        className="absolute bottom-12 text-xl md:text-3xl lg:text-4xl text-center max-w-3xl leading-relaxed px-4"
       >
         Sigues aquí. Buena señal. Probablemente no te conformas con lo estándar.
       </motion.p>

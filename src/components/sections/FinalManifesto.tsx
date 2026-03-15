@@ -33,7 +33,7 @@ const FinalManifesto = () => {
         transition={{ duration: 0.8, delay: 0.8 }}
         className="mt-8"
       >
-        <button className="font-heading px-10 md:px-16 py-5 md:py-6 border-2 border-foreground text-foreground text-xl md:text-3xl tracking-[0.15em] uppercase hover:bg-foreground hover:text-background transition-all duration-500">
+        <button className="font-heading px-10 md:px-16 py-5 md:py-6 border-2 border-foreground text-foreground uppercase hover:bg-foreground hover:text-background transition-all duration-500" style={{ fontSize: "2rem" }}>
           QUE NO SEA MEDIOCRE
         </button>
       </motion.div>
@@ -43,7 +43,7 @@ const FinalManifesto = () => {
         whileInView={{ opacity: 1 }}
         viewport={{ once: true }}
         transition={{ duration: 1, delay: 1.2 }}
-        className="text-xl md:text-3xl text-center max-w-4xl leading-relaxed mt-12"
+        className="text-xl md:text-3xl lg:text-4xl text-center max-w-4xl leading-relaxed mt-12"
       >
         Si has llegado hasta aquí, ya somos dos que pensamos parecido.
       </motion.p>

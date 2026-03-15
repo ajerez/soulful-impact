@@ -69,7 +69,7 @@ const LaboratorySection = () => {
         transition={{ duration: 0.8, delay: 0.3 }}
         className="flex justify-center mt-20"
       >
-        <button className="font-heading px-10 md:px-16 py-5 md:py-6 border-2 border-foreground text-foreground text-xl md:text-3xl uppercase hover:bg-foreground hover:text-background transition-all duration-500">
+        <button className="font-heading px-10 md:px-16 py-5 md:py-6 border-2 border-foreground text-foreground uppercase hover:bg-foreground hover:text-background transition-all duration-500" style={{ fontSize: "2rem" }}>
           HABLEMOS
         </button>
       </motion.div>

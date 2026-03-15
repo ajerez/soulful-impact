@@ -2,9 +2,9 @@ import { motion } from "framer-motion";
 
 const lines = [
   { text: "Impacto con estructura.", size: "font-heading text-3xl md:text-5xl lg:text-6xl" },
-  { text: "Concepto antes que estética. Narrativa antes que decoración.", size: "text-xl md:text-3xl" },
+  { text: "Concepto antes que estética. Narrativa antes que decoración.", size: "text-xl md:text-3xl lg:text-4xl" },
   { text: "Ejecución impecable.", size: "font-heading text-3xl md:text-5xl lg:text-6xl" },
-  { text: "No es perfeccionismo. Es respeto por el resultado.", size: "text-xl md:text-3xl" },
+  { text: "No es perfeccionismo. Es respeto por el resultado.", size: "text-xl md:text-3xl lg:text-4xl" },
 ];
 
 const MethodSection = () => {
@@ -28,7 +28,7 @@ const MethodSection = () => {
         whileInView={{ opacity: 1 }}
         viewport={{ once: true }}
         transition={{ duration: 1, delay: 0.8 }}
-        className="text-xl md:text-3xl text-center max-w-4xl leading-relaxed mt-8"
+        className="text-xl md:text-3xl lg:text-4xl text-center max-w-4xl leading-relaxed mt-8"
       >
         Y evitar que una gran idea acabe pareciendo una feria temática de aeropuerto.
       </motion.p>

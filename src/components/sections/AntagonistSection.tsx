@@ -27,7 +27,7 @@ const AntagonistSection = () => {
         whileInView={{ opacity: 1 }}
         viewport={{ once: true, amount: 1 }}
         transition={{ duration: 1.5, delay: 0.3 }}
-        className="text-xl md:text-3xl text-center max-w-3xl leading-relaxed"
+        className="text-xl md:text-3xl lg:text-4xl text-center max-w-3xl leading-relaxed"
       >
         Impacto. No ruido.
       </motion.p>
