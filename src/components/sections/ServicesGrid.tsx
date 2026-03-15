@@ -34,15 +34,6 @@ const ServiceCard = ({ title, desc, bg }: { title: string; desc: string; bg: str
         <>
           <div
             className="absolute inset-0 bg-cover bg-center opacity-50"
-        style={{
-          backgroundImage: `url(${bg})`,
-          transform: hovered ? "scale(1.05)" : "scale(1)",
-        }}
-      />
-      {hovered && (
-        <>
-          <div
-            className="absolute inset-0 bg-cover bg-center opacity-50"
             style={{
               backgroundImage: `url(${bg})`,
               mixBlendMode: "multiply",
