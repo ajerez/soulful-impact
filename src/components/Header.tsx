@@ -32,7 +32,7 @@ const Header = () => {
       <header
         className={`fixed top-0 left-0 w-full z-50 transition-all duration-500 ${
           scrolled
-            ? "bg-black/80 backdrop-blur-md border-b border-white/10"
+            ? "bg-black/40 backdrop-blur-md border-b border-white/10"
             : "bg-transparent border-b border-transparent"
         }`}
       >
@@ -59,11 +59,7 @@ const Header = () => {
           </nav>
 
           {/* Mobile hamburger */}
-          <button
-            onClick={() => setMenuOpen(true)}
-            className="md:hidden text-foreground"
-            aria-label="Abrir menú"
-          >
+          <button onClick={() => setMenuOpen(true)} className="md:hidden text-foreground" aria-label="Abrir menú">
             <Menu size={24} strokeWidth={1.5} />
           </button>
         </div>
