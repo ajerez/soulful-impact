@@ -8,7 +8,7 @@ const blocks = [
 
 const AntagonistSection = () => {
   return (
-    <section className="min-h-[110dvh] flex flex-col items-center justify-center px-6 md:px-12 py-24 gap-16 md:gap-24">
+    <section className="min-h-[110dvh] flex flex-col items-center justify-center px-6 md:px-12 py-24 gap-16 md:gap-24 bg-foreground text-background">
       {blocks.map((text, i) => (
         <motion.p
           key={i}
