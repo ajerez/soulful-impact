@@ -9,7 +9,7 @@ const lines = [
 
 const ManifestoSection = () => {
   return (
-    <section className="min-h-[110dvh] flex flex-col items-center justify-center px-6 md:px-12 py-24 gap-12 md:gap-16">
+    <section className="min-h-[110dvh] flex flex-col items-center justify-center px-6 md:px-12 py-24 gap-16 md:gap-24 text-background" style={{ backgroundColor: "hsl(var(--heading))" }}>
       {lines.map((text, i) => (
         <motion.p
           key={i}
