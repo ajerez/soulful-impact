@@ -39,7 +39,6 @@ const FinalFilter = () => {
         Si has llegado hasta aquí, ya somos dos que pensamos parecido.
       </motion.p>
     </section>
-    </section>
   );
 };
 
