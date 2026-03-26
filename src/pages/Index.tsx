@@ -16,7 +16,7 @@ import CleanScreen5 from "@/components/sections/CleanScreen5";
 import QuestionsSection from "@/components/sections/QuestionsSection";
 import FinalFilter from "@/components/sections/FinalFilter";
 import CleanScreen6 from "@/components/sections/CleanScreen6";
-import FinalManifesto from "@/components/sections/FinalManifesto";
+import Footer from "@/components/Footer";
 
 const Index = () => {
   return (
@@ -87,6 +87,8 @@ const Index = () => {
       <CinematicSection topTransition="curve" bottomTransition="none">
         <FinalManifesto />
       </CinematicSection>
+
+      <Footer />
     </div>
   );
 };
