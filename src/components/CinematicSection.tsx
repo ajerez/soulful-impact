@@ -1,6 +1,6 @@
 import { ReactNode } from "react";
 
-type TransitionVariant = "fade" | "diagonal" | "curve" | "heavy" | "none";
+type TransitionVariant = "fade" | "fade-short" | "diagonal" | "curve" | "heavy" | "none";
 
 interface CinematicSectionProps {
   children: ReactNode;
@@ -45,6 +45,8 @@ const CinematicSection = ({
               ? "cinematic-edge--curve-bottom"
               : bottomTransition === "heavy"
               ? "cinematic-edge--heavy-bottom"
+              : bottomTransition === "fade-short"
+              ? "cinematic-edge--fade-short-bottom"
               : "cinematic-edge--fade-bottom"
           }`}
           aria-hidden="true"
