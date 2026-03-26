@@ -1,6 +1,8 @@
-import { motion } from "framer-motion";
+import { useState, useEffect } from "react";
+import { motion, AnimatePresence } from "framer-motion";
 import GlitchImage from "../GlitchImage";
-import fotoJuan from "@/assets/foto-juan-dirigiendo.jpg";
+import fotoJuan1 from "@/assets/foto-juan-dirigiendo.jpg";
+import fotoJuan2 from "@/assets/foto-juan-retrato.png";
 
 const staggerBlocks = [
   "Diseño espacios que cambian comportamientos.",
@@ -8,7 +10,21 @@ const staggerBlocks = [
   "No trabajo en decoración. Trabajo en intención. Impacto con alma.",
 ];
 
+const images = [
+  { src: fotoJuan1, alt: "Creative director backstage" },
+  { src: fotoJuan2, alt: "Juan A. Gil del Pozo retrato" },
+];
+
 const IdentitySection = () => {
+  const [currentImage, setCurrentImage] = useState(0);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentImage((prev) => (prev + 1) % images.length);
+    }, 5000);
+    return () => clearInterval(interval);
+  }, []);
+
   return (
     <section id="identidad" className="min-h-[110dvh] flex flex-col md:flex-row items-center px-6 md:px-12 lg:px-24 py-24 gap-12 md:gap-16">
       {/* Left - Text */}
@@ -58,19 +74,32 @@ const IdentitySection = () => {
         </motion.p>
       </div>
 
-      {/* Right - Image */}
+      {/* Right - Image carousel */}
       <motion.div
         initial={{ opacity: 0, scale: 0.95 }}
         whileInView={{ opacity: 1, scale: 1 }}
         viewport={{ once: true }}
         transition={{ duration: 1.2, delay: 0.3 }}
-        className="flex-1 w-full max-w-lg md:max-w-none self-start md:self-center"
+        className="flex-1 w-full max-w-lg md:max-w-none self-start md:self-center relative"
       >
-        <GlitchImage
-          src={fotoJuan}
-          alt="Creative director backstage"
-          className="w-full h-[50vh] md:h-[80vh] rounded-sm"
-        />
+        <div className="relative w-full h-[50vh] md:h-[80vh]">
+          <AnimatePresence mode="wait">
+            <motion.div
+              key={currentImage}
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              exit={{ opacity: 0 }}
+              transition={{ duration: 1.2 }}
+              className="absolute inset-0"
+            >
+              <GlitchImage
+                src={images[currentImage].src}
+                alt={images[currentImage].alt}
+                className="w-full h-full rounded-sm"
+              />
+            </motion.div>
+          </AnimatePresence>
+        </div>
       </motion.div>
     </section>
   );
