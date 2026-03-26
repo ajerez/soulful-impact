@@ -5,6 +5,7 @@ import costaAzucar from "@/assets/costa-azucar.png";
 import narrativaBg from "@/assets/narrativa-bg.png";
 import disenoVisual from "@/assets/diseno-visual.png";
 import disenoEspacios from "@/assets/diseno-espacios.png";
+import disenoEspaciosNew from "@/assets/diseno-espacios-new.png";
 
 const services = [
   {
@@ -31,7 +32,8 @@ const services = [
     bg: narrativaBg,
     bgPos: "center",
   },
-  { title: "Diseño de Espacios", desc: "Locales que no se visitan. Se habitan.", bg: disenoEspacios, bgPos: "center" },
+  { title: "Diseño de Espacios", desc: "Lugares que no se visitan. Se habitan.", bg: disenoEspaciosNew, bgPos: "center" },
+  { title: "Escenografía y Decorados", desc: "", bg: disenoEspacios, bgPos: "center" },
 ];
 
 const ServiceCard = ({ title, desc, bg, bgPos }: { title: string; desc: string; bg: string; bgPos: string }) => {
