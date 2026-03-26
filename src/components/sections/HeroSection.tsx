@@ -1,8 +1,13 @@
 import { motion } from "framer-motion";
+import heroBg from "@/assets/hero-bg.png";
 
 const HeroSection = () => {
   return (
     <section className="relative min-h-[110dvh] flex flex-col items-center justify-center px-6 md:px-12">
+      <div
+        className="absolute inset-0 bg-cover bg-center grayscale"
+        style={{ backgroundImage: `url(${heroBg})`, opacity: 0.25 }}
+      />
       <div className="max-w-4xl text-center space-y-8">
         <motion.h1
           initial={{ opacity: 0, y: 30 }}
