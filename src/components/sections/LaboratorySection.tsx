@@ -70,7 +70,7 @@ const LaboratorySection = () => {
         className="flex justify-center mt-20"
       >
         <button className="font-heading px-10 md:px-16 py-5 md:py-6 border-2 border-foreground text-foreground uppercase hover:bg-foreground hover:text-background transition-all duration-500" style={{ fontSize: "2rem", borderRadius: "50px" }}>
-          HABLEMOS
+          QUE NO SEA MEDIOCRE
         </button>
       </motion.div>
     </section>

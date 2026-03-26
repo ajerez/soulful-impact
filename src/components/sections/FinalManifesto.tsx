@@ -34,7 +34,7 @@ const FinalManifesto = () => {
         className="mt-8"
       >
         <button className="font-heading px-10 md:px-16 py-5 md:py-6 border-2 border-foreground text-foreground uppercase hover:bg-foreground hover:text-background transition-all duration-500" style={{ fontSize: "2rem", borderRadius: "50px" }}>
-          QUE NO SEA MEDIOCRE
+          HABLEMOS
         </button>
       </motion.div>
 
