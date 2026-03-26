@@ -52,7 +52,7 @@ const Index = () => {
         <CleanScreen3 />
       </CinematicSection>
 
-      <CinematicSection topTransition="fade" bottomTransition="diagonal">
+      <CinematicSection topTransition="heavy" bottomTransition="heavy">
         <ManifestoSection />
       </CinematicSection>
 
