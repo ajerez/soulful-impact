@@ -60,7 +60,7 @@ const HeroSection = () => {
         >
           <button
             className="mt-8 font-heading px-10 md:px-16 py-5 md:py-6 border-2 border-foreground text-foreground uppercase hover:bg-foreground hover:text-background transition-all duration-500"
-            style={{ fontSize: "2rem" }}
+            style={{ fontSize: "2rem", borderRadius: "50px" }}
           >
             HAGAMOS ALGO REAL
           </button>
