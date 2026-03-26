@@ -6,7 +6,7 @@ const HeroSection = () => {
     <section className="relative min-h-[110dvh] flex flex-col items-center justify-center px-6 md:px-12">
       <div
         className="absolute inset-0 bg-cover bg-center grayscale pointer-events-none"
-        style={{ backgroundImage: `url(${heroBg})`, opacity: 0.25 }}
+        style={{ backgroundImage: `url(${heroBg})`, opacity: 0.1875 }}
       />
       <div className="max-w-4xl text-center space-y-8">
         <motion.h1

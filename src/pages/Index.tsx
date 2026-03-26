@@ -25,7 +25,7 @@ const Index = () => {
       <Header />
       <FilmGrainOverlay />
 
-      <CinematicSection topTransition="none" bottomTransition="fade-short">
+      <CinematicSection topTransition="none" bottomTransition="none">
         <HeroSection />
       </CinematicSection>
 
