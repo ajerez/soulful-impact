@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { X, ArrowRight } from "lucide-react";
+import { X, ArrowRight, Loader2 } from "lucide-react";
 import contactBg from "@/assets/contact-modal-bg.jpg";
 
 interface ContactModalProps {
@@ -169,13 +169,23 @@ const ContactModal = ({ open, onClose }: ContactModalProps) => {
                   <motion.div variants={fadeUp} className="pt-4">
                     <button
                       type="submit"
-                      className="group flex items-center justify-center gap-3 bg-white text-[#0f0620] px-8 py-4 uppercase tracking-widest font-heading text-sm hover:bg-[#C49A45] hover:text-white transition-colors duration-300"
+                      disabled={sending}
+                      className="group flex items-center justify-center gap-3 bg-white text-[#0f0620] px-8 py-4 uppercase tracking-widest font-heading text-sm hover:bg-[#C49A45] hover:text-white transition-colors duration-300 disabled:opacity-50 disabled:cursor-not-allowed disabled:hover:bg-white disabled:hover:text-[#0f0620]"
                     >
-                      LANZAR PROPUESTA
-                      <ArrowRight
-                        size={18}
-                        className="group-hover:translate-x-2 transition-transform duration-300"
-                      />
+                      {sending ? (
+                        <>
+                          ENVIANDO...
+                          <Loader2 size={18} className="animate-spin" />
+                        </>
+                      ) : (
+                        <>
+                          LANZAR PROPUESTA
+                          <ArrowRight
+                            size={18}
+                            className="group-hover:translate-x-2 transition-transform duration-300"
+                          />
+                        </>
+                      )}
                     </button>
                   </motion.div>
                 </motion.form>
