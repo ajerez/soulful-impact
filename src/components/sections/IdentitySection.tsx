@@ -46,7 +46,7 @@ const IdentitySection = () => {
           transition={{ duration: 0.8, delay: 0.2 }}
           className="text-muted-foreground leading-relaxed" style={{ fontSize: "1.5rem" }}
         >
-          Director creativo especializado en experiencias inmersivas
+          Director creativo especializado en experiencias inmersivas residente en Torre del Mar (Málaga)
         </motion.p>
 
         {staggerBlocks.map((text, i) => (
