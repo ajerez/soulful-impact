@@ -24,7 +24,7 @@ const experiments = [
   { src: lab05, caption: "Experimento 06: El espacio como personaje" },
 ];
 
-const LaboratorySection = () => {
+const LaboratorySection = ({ onContact }: { onContact?: () => void }) => {
   return (
     <section id="laboratorio" className="min-h-[130dvh] px-6 md:px-12 lg:px-24 py-24">
       {/* Copy */}
@@ -69,7 +69,7 @@ const LaboratorySection = () => {
         transition={{ duration: 0.8, delay: 0.3 }}
         className="flex justify-center mt-20"
       >
-        <button className="font-heading px-10 md:px-16 py-5 md:py-6 border-2 border-foreground text-foreground uppercase hover:bg-foreground hover:text-background transition-all duration-500" style={{ fontSize: "2rem", borderRadius: "50px" }}>
+        <button onClick={onContact} className="font-heading px-10 md:px-16 py-5 md:py-6 border-2 border-foreground text-foreground uppercase hover:bg-foreground hover:text-background transition-all duration-500" style={{ fontSize: "2rem", borderRadius: "50px" }}>
           QUE NO SEA MEDIOCRE
         </button>
       </motion.div>

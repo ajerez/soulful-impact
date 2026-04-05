@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import heroBg from "@/assets/hero-bg.png";
 
-const HeroSection = () => {
+const HeroSection = ({ onContact }: { onContact?: () => void }) => {
   return (
     <section className="relative min-h-[110dvh] flex flex-col items-center justify-center px-6 md:px-12">
       <div
@@ -59,6 +59,7 @@ const HeroSection = () => {
           transition={{ duration: 0.8, delay: 2.8 }}
         >
           <button
+            onClick={onContact}
             className="mt-8 font-heading px-10 md:px-16 py-5 md:py-6 border-2 border-foreground text-foreground uppercase hover:bg-foreground hover:text-background transition-all duration-500"
             style={{ fontSize: "2rem", borderRadius: "50px" }}
           >

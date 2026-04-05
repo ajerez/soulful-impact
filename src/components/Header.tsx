@@ -8,7 +8,7 @@ const navItems = [
   { label: "HABLEMOS", target: "hablemos" },
 ];
 
-const Header = () => {
+const Header = ({ onContact }: { onContact?: () => void }) => {
   const [scrolled, setScrolled] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
 
@@ -22,6 +22,10 @@ const Header = () => {
     setMenuOpen(false);
     if (id === "top") {
       window.scrollTo({ top: 0, behavior: "smooth" });
+      return;
+    }
+    if (id === "hablemos" && onContact) {
+      onContact();
       return;
     }
     document.getElementById(id)?.scrollIntoView({ behavior: "smooth" });

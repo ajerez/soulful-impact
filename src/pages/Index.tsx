@@ -1,3 +1,4 @@
+import { useState } from "react";
 import Header from "@/components/Header";
 import FilmGrainOverlay from "@/components/FilmGrainOverlay";
 import CinematicSection from "@/components/CinematicSection";
@@ -18,15 +19,19 @@ import FinalFilter from "@/components/sections/FinalFilter";
 import CleanScreen6 from "@/components/sections/CleanScreen6";
 import FinalManifesto from "@/components/sections/FinalManifesto";
 import Footer from "@/components/Footer";
+import ContactModal from "@/components/ContactModal";
 
 const Index = () => {
+  const [contactOpen, setContactOpen] = useState(false);
+  const openContact = () => setContactOpen(true);
+
   return (
     <div className="overflow-x-hidden">
-      <Header />
+      <Header onContact={openContact} />
       <FilmGrainOverlay />
 
       <CinematicSection topTransition="none" bottomTransition="none">
-        <HeroSection />
+        <HeroSection onContact={openContact} />
       </CinematicSection>
 
       <CinematicSection topTransition="none" bottomTransition="heavy">
@@ -46,7 +51,7 @@ const Index = () => {
       </CinematicSection>
 
       <CinematicSection topTransition="curve" bottomTransition="heavy">
-        <LaboratorySection />
+        <LaboratorySection onContact={openContact} />
       </CinematicSection>
 
       <CinematicSection topTransition="fade" bottomTransition="fade">
@@ -86,10 +91,11 @@ const Index = () => {
       </CinematicSection>
 
       <CinematicSection topTransition="curve" bottomTransition="none">
-        <FinalManifesto />
+        <FinalManifesto onContact={openContact} />
       </CinematicSection>
 
       <Footer />
+      <ContactModal open={contactOpen} onClose={() => setContactOpen(false)} />
     </div>
   );
 };
