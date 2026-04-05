@@ -26,7 +26,7 @@ const experiments = [
 
 const LaboratorySection = ({ onContact }: { onContact?: () => void }) => {
   return (
-    <section id="laboratorio" className="min-h-[130dvh] px-6 md:px-12 lg:px-24 py-24">
+    <section id="laboratorio" className="min-h-[130dvh] px-6 md:px-12 lg:px-24 py-24 pb-40">
       {/* Copy */}
       <div className="max-w-3xl mx-auto mb-20 space-y-6">
         {copyLines.map((line, i) => (
