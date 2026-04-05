@@ -78,7 +78,7 @@ const ContactModal = ({ open, onClose }: ContactModalProps) => {
             <img
               src={contactBg}
               alt="Contacto"
-              className="w-full h-full object-cover"
+              className="w-full h-full object-cover opacity-50"
             />
           </div>
 
