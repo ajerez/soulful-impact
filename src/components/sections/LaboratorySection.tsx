@@ -61,13 +61,23 @@ const LaboratorySection = ({ onContact }: { onContact?: () => void }) => {
         ))}
       </div>
 
-      {/* CTA */}
+      {/* Frase + CTA */}
+      <motion.p
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1 }}
+        viewport={{ once: true }}
+        transition={{ duration: 1, delay: 0.2 }}
+        className="text-center max-w-3xl leading-relaxed mt-16"
+        style={{ fontSize: "1.5rem", color: "#C2B280" }}
+      >
+        Hay quien mira la escena. Tú has entrado en ella.
+      </motion.p>
       <motion.div
         initial={{ opacity: 0, y: 30 }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}
-        transition={{ duration: 0.8, delay: 0.3 }}
-        className="flex justify-center mt-20"
+        transition={{ duration: 0.8, delay: 0.4 }}
+        className="flex justify-center mt-10"
       >
         <button onClick={onContact} className="font-heading px-10 md:px-16 py-5 md:py-6 border-2 border-foreground text-foreground uppercase hover:bg-foreground hover:text-background transition-all duration-500" style={{ fontSize: "2rem", borderRadius: "50px" }}>
           QUE NO SEA MEDIOCRE

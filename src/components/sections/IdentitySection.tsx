@@ -70,7 +70,7 @@ const IdentitySection = () => {
           className="text-center max-w-3xl leading-relaxed pt-8"
           style={{ fontSize: "1.5rem", color: "#C2B280" }}
         >
-          Hay quien mira la escena. Tú has entrado en ella.
+          Sigues aquí. Buena señal. Probablemente no te conformas con lo estándar.
         </motion.p>
       </div>
 
