@@ -33,7 +33,7 @@ const services = [
     bgPos: "center",
   },
   { title: "Diseño de Espacios", desc: "Lugares que no se visitan. Se habitan.", bg: disenoEspaciosNew, bgPos: "center" },
-  { title: "Escenografía y Decorados", desc: "", bg: disenoEspacios, bgPos: "center" },
+  { title: "Escenografía y Decorados", desc: "Viaja a nuevos universos orgánicos y detallados.", bg: disenoEspacios, bgPos: "center" },
 ];
 
 const ServiceCard = ({ title, desc, bg, bgPos }: { title: string; desc: string; bg: string; bgPos: string }) => {
