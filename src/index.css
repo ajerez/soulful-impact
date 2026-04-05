@@ -145,6 +145,26 @@
   95% { opacity: 1; clip-path: polygon(0 60%, 100% 60%, 100% 80%, 0 80%); transform: translate(3px, -1px); }
 }
 
+/* ── Neon Flicker IDEAS ── */
+.neon-flicker-ideas {
+  -webkit-text-stroke: 2px rgb(232, 230, 227);
+  color: transparent;
+  display: inline-block;
+  animation: neonWake 4s infinite;
+}
+
+@keyframes neonWake {
+  0%, 10%, 20% {
+    -webkit-text-stroke-color: rgba(232, 230, 227, 0.1);
+  }
+  15%, 25% {
+    -webkit-text-stroke-color: rgba(232, 230, 227, 0.8);
+  }
+  30%, 100% {
+    -webkit-text-stroke-color: rgb(232, 230, 227);
+  }
+}
+
 @keyframes glitch-anim-white {
   0%, 90%, 100% { opacity: 0; clip-path: polygon(0 0, 100% 0, 100% 0, 0 0); transform: translate(0); }
   92% { opacity: 1; clip-path: polygon(0 20%, 100% 20%, 100% 50%, 0 50%); transform: translate(3px, -2px); }

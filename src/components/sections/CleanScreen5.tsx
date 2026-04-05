@@ -15,7 +15,7 @@ const CleanScreen5 = () => {
           color: "transparent",
         }}
       >
-        LAS IDEAS SON FÁCILES
+        LAS <span className="neon-flicker-ideas">IDEAS</span> SON FÁCILES
       </h2>
       <motion.h2
         style={{ opacity: fillOpacity }}
