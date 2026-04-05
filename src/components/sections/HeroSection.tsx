@@ -55,10 +55,10 @@ const HeroSection = ({ onContact }: { onContact?: () => void }) => {
         >
           <button
             onClick={onContact}
-            className="mt-8 font-heading px-10 md:px-16 py-5 md:py-6 border-2 border-foreground text-foreground uppercase hover:bg-foreground hover:text-background transition-all duration-500"
-            style={{ fontSize: "2rem", borderRadius: "50px" }}
+            className="mt-8 btn-magnetic font-heading px-10 md:px-16 py-5 md:py-6 uppercase tracking-widest"
+            style={{ fontSize: "2rem" }}
           >
-            HAGAMOS ALGO REAL
+            <span>HAGAMOS ALGO REAL</span>
           </button>
         </motion.div>
       </div>

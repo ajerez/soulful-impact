@@ -79,8 +79,8 @@ const LaboratorySection = ({ onContact }: { onContact?: () => void }) => {
         transition={{ duration: 0.8, delay: 0.4 }}
         className="flex justify-center mt-10"
       >
-        <button onClick={onContact} className="font-heading px-10 md:px-16 py-5 md:py-6 border-2 border-foreground text-foreground uppercase hover:bg-foreground hover:text-background transition-all duration-500" style={{ fontSize: "2rem", borderRadius: "50px" }}>
-          QUE NO SEA MEDIOCRE
+        <button onClick={onContact} className="btn-magnetic font-heading px-10 md:px-16 py-5 md:py-6 uppercase tracking-widest" style={{ fontSize: "2rem" }}>
+          <span>QUE NO SEA MEDIOCRE</span>
         </button>
       </motion.div>
     </section>
