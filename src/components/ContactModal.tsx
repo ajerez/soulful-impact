@@ -10,6 +10,7 @@ interface ContactModalProps {
 
 const ContactModal = ({ open, onClose }: ContactModalProps) => {
   const [submitted, setSubmitted] = useState(false);
+  const [sending, setSending] = useState(false);
 
   useEffect(() => {
     if (open) {
@@ -20,8 +21,23 @@ const ContactModal = ({ open, onClose }: ContactModalProps) => {
     return () => document.body.classList.remove("overflow-hidden");
   }, [open]);
 
-  const handleSubmit = () => {
-    setSubmitted(true);
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+    setSending(true);
+    const form = e.currentTarget;
+    const data = new FormData(form);
+    try {
+      await fetch("https://formspree.io/f/xpqokadr", {
+        method: "POST",
+        body: data,
+        headers: { Accept: "application/json" },
+      });
+      setSubmitted(true);
+    } catch {
+      // silently fail
+    } finally {
+      setSending(false);
+    }
   };
 
   const inputClass =
