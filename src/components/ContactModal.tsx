@@ -99,7 +99,7 @@ const ContactModal = ({ open, onClose }: ContactModalProps) => {
 
               <motion.p
                 variants={fadeUp}
-                className="font-body text-sm text-white/50 leading-relaxed"
+                className="font-body text-lg md:text-2xl text-white/50 leading-relaxed"
               >
                 Cuéntame qué tienes en mente. Si buscas algo estándar, quizás no
                 sea el lugar. Si buscas impacto, estás en el sitio correcto.
@@ -108,7 +108,7 @@ const ContactModal = ({ open, onClose }: ContactModalProps) => {
               {submitted ? (
                 <motion.div variants={fadeUp} className="space-y-4 pt-4">
                   <p className="font-heading text-2xl text-[#C49A45]">MENSAJE ENVIADO</p>
-                  <p className="font-body text-white/60 text-sm">
+                  <p className="font-body text-white/60 text-lg md:text-2xl">
                     Gracias. Te responderé pronto.
                   </p>
                 </motion.div>
@@ -170,7 +170,8 @@ const ContactModal = ({ open, onClose }: ContactModalProps) => {
                     <button
                       type="submit"
                       disabled={sending}
-                      className="group flex items-center justify-center gap-3 bg-white text-[#0f0620] px-8 py-4 uppercase tracking-widest font-heading text-sm hover:bg-[#C49A45] hover:text-white transition-colors duration-300 disabled:opacity-50 disabled:cursor-not-allowed disabled:hover:bg-white disabled:hover:text-[#0f0620]"
+className="group flex items-center justify-center gap-3 bg-white text-[#0f0620] px-8 py-4 uppercase tracking-widest font-heading hover:bg-[#C49A45] hover:text-white transition-colors duration-300 disabled:opacity-50 disabled:cursor-not-allowed disabled:hover:bg-white disabled:hover:text-[#0f0620]"
+                      style={{ fontSize: "1.5rem", borderRadius: "26px" }}
                     >
                       {sending ? (
                         <>
