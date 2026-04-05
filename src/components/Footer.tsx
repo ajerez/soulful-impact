@@ -2,7 +2,7 @@ const Footer = () => {
   return (
     <footer className="py-8 text-center">
       <p className="text-xs text-muted-foreground uppercase tracking-widest">
-        © {new Date().getFullYear()} Juan A. Gil del Pozo. Todos los derechos reservados.
+        Juan A. Gil del Pozo. © {new Date().getFullYear()}. Málaga. Todos los derechos reservados.
       </p>
     </footer>
   );

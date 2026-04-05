@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 import { useState } from "react";
 import charlando from "@/assets/charlando.jpg";
 import costaAzucar from "@/assets/costa-azucar.png";
-import narrativaBg from "@/assets/narrativa-bg.png";
+import gamificacionBg from "@/assets/gamificacion-bg.png";
 import disenoVisual from "@/assets/diseno-visual.png";
 import disenoEspacios from "@/assets/diseno-espacios.png";
 import disenoEspaciosNew from "@/assets/diseno-espacios-new.png";
@@ -27,9 +27,9 @@ const services = [
     bgPos: "bottom",
   },
   {
-    title: "Narrativa",
-    desc: "Si el espacio no cuenta una historia, solo es un pasillo.",
-    bg: narrativaBg,
+    title: "Gamificación",
+    desc: "Transforma una actividad en una experiencia original y atractiva.",
+    bg: gamificacionBg,
     bgPos: "center",
   },
   { title: "Diseño de Espacios", desc: "Lugares que no se visitan. Se habitan.", bg: disenoEspaciosNew, bgPos: "center" },
