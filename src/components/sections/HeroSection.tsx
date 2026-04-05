@@ -62,7 +62,6 @@ const HeroSection = ({ onContact }: { onContact?: () => void }) => {
           </button>
         </motion.div>
       </div>
-      </motion.p>
     </section>
   );
 };
