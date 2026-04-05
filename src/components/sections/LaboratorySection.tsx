@@ -67,7 +67,7 @@ const LaboratorySection = ({ onContact }: { onContact?: () => void }) => {
         whileInView={{ opacity: 1 }}
         viewport={{ once: true }}
         transition={{ duration: 1, delay: 0.2 }}
-        className="text-center max-w-3xl leading-relaxed mt-16"
+        className="text-center max-w-3xl mx-auto leading-relaxed mt-16"
         style={{ fontSize: "1.5rem", color: "#C2B280" }}
       >
         Hay quien mira la escena. Tú has entrado en ella.
