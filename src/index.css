@@ -155,13 +155,16 @@
 
 @keyframes neonWake {
   0%, 10%, 20% {
-    -webkit-text-stroke-color: rgba(232, 230, 227, 0.1);
+    -webkit-text-stroke-color: rgba(196, 154, 69, 0.1);
+    filter: drop-shadow(0 0 0px rgba(196, 154, 69, 0));
   }
   15%, 25% {
-    -webkit-text-stroke-color: rgba(232, 230, 227, 0.8);
+    -webkit-text-stroke-color: rgba(196, 154, 69, 0.8);
+    filter: drop-shadow(0 0 4px rgba(196, 154, 69, 0.4));
   }
   30%, 100% {
-    -webkit-text-stroke-color: rgb(232, 230, 227);
+    -webkit-text-stroke-color: rgb(196, 154, 69);
+    filter: drop-shadow(0 0 8px rgba(196, 154, 69, 0.6));
   }
 }
 
