@@ -41,7 +41,7 @@ const ContactModal = ({ open, onClose }: ContactModalProps) => {
   };
 
   const inputClass =
-    "w-full bg-transparent border-b border-white/20 py-3 text-white/90 placeholder:text-white/40 focus:border-[#C49A45] focus:outline-none transition-colors duration-300 font-body";
+    "w-full bg-transparent border-b border-white/20 py-3 text-white/90 text-lg md:text-2xl placeholder:text-white/40 placeholder:text-lg placeholder:md:text-2xl focus:border-[#C49A45] focus:outline-none transition-colors duration-300 font-body";
 
   const stagger = {
     hidden: {},
