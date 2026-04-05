@@ -16,12 +16,7 @@ const HeroSection = ({ onContact }: { onContact?: () => void }) => {
           className="font-heading text-5xl md:text-7xl lg:text-9xl tracking-tight md:-tracking-wider"
         >
           Vengo del{" "}
-          <span
-            style={{
-              WebkitTextStroke: "2px rgb(232, 230, 227)",
-              color: "transparent",
-            }}
-          >
+          <span className="glitch-futuro">
             futuro
           </span>
         </motion.h1>
