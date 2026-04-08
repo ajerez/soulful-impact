@@ -8,6 +8,10 @@ const HeroSection = ({ onContact }: { onContact?: () => void }) => {
         className="absolute inset-0 bg-cover bg-center grayscale pointer-events-none"
         style={{ backgroundImage: `url(${heroBg})`, opacity: 0.1875 }}
       />
+      <div
+        className="absolute inset-x-0 bottom-0 pointer-events-none"
+        style={{ height: "20%", background: "linear-gradient(to bottom, transparent, black)" }}
+      />
       <div className="max-w-4xl text-center space-y-8">
         <motion.h1
           initial={{ opacity: 0, y: 30 }}
