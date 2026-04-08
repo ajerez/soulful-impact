@@ -5,12 +5,12 @@ const CleanScreen1 = () => {
   const ref = useRef<HTMLElement>(null);
   const { scrollYProgress } = useScroll({ target: ref, offset: ["start end", "end start"] });
   
-  const opacity1 = useTransform(scrollYProgress, [0.15, 0.3, 0.4, 0.5], [0, 1, 1, 0]);
-  const opacity2 = useTransform(scrollYProgress, [0.5, 0.6, 0.75, 0.85], [0, 1, 1, 0]);
-  const scale2 = useTransform(scrollYProgress, [0.5, 0.65], [1.02, 1]);
+  const opacity1 = useTransform(scrollYProgress, [0.05, 0.15, 0.35, 0.45], [0, 1, 1, 0]);
+  const opacity2 = useTransform(scrollYProgress, [0.55, 0.65, 0.85, 0.95], [0, 1, 1, 0]);
+  const scale2 = useTransform(scrollYProgress, [0.55, 0.75], [1.02, 1]);
 
   return (
-    <section ref={ref} className="relative min-h-[100dvh] flex items-center justify-center bg-black px-6">
+    <section ref={ref} className="relative min-h-[200dvh] flex items-center justify-center bg-black px-6">
       <div className="max-w-4xl text-center">
         <motion.p
           style={{ opacity: opacity1 }}
