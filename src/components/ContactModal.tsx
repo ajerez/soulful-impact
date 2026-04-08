@@ -101,8 +101,9 @@ const ContactModal = ({ open, onClose }: ContactModalProps) => {
                 variants={fadeUp}
                 className="font-body text-lg md:text-2xl text-white/50 leading-relaxed"
               >
-                Cuéntame qué tienes en mente. Si buscas algo estándar, quizás no
-                sea el lugar. Si buscas impacto, estás en el sitio correcto.
+                Cuéntame qué tienes en mente.
+                <br />
+                Será un placer escuchar tu propuesta y buscar formas para convertirlo en algo que perdure.
               </motion.p>
 
               {submitted ? (
