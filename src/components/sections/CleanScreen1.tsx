@@ -13,7 +13,7 @@ const CleanScreen1 = () => {
     <section ref={ref} className="relative min-h-[100dvh] flex items-center justify-center bg-black px-6">
       <div className="max-w-4xl text-center">
         <motion.p
-          style={{ opacity: opacity1, maxWidth: "718px" }}
+          style={{ opacity: opacity1, maxWidth: "620px" }}
           className="font-heading text-3xl md:text-5xl lg:text-7xl absolute inset-0 flex items-center justify-center px-6 mx-auto"
         >
           Si todo es experiencia, nada lo es.
