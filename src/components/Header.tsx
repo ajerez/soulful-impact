@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import { Menu, X } from "lucide-react";
+import logoFirma from "@/assets/Logo_firma_Juan.svg";
 
 const navItems = [
   { label: "IDENTIDAD", target: "identidad" },
