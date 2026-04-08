@@ -56,7 +56,6 @@ const HeroSection = ({ onContact }: { onContact?: () => void }) => {
           <button
             onClick={onContact}
             className="mt-8 btn-magnetic font-heading px-10 md:px-16 uppercase tracking-widest" style={{ paddingTop: "1rem", paddingBottom: "1rem", fontSize: "2rem" }}
-            style={{ fontSize: "2rem" }}
           >
             <span>HAGAMOS ALGO REAL</span>
           </button>
