@@ -174,11 +174,18 @@
   96% { opacity: 1; clip-path: polygon(0 70%, 100% 70%, 100% 90%, 0 90%); transform: translate(-3px, 2px); }
 }
 
+/* ── Outline text ── */
+.outline-text {
+  -webkit-text-stroke: 2px rgb(232, 230, 227);
+  color: transparent;
+}
+
 @media (max-width: 767px) {
   .glitch-futuro,
   .glitch-futuro::before,
   .glitch-futuro::after,
-  .neon-flicker-ideas {
+  .neon-flicker-ideas,
+  .outline-text {
     -webkit-text-stroke-width: 1px;
   }
 }
