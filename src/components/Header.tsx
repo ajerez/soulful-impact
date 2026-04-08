@@ -65,7 +65,7 @@ const Header = ({ onContact }: { onContact?: () => void }) => {
               <button
                 key={item.target}
                 onClick={() => scrollTo(item.target)}
-                className="font-body text-xs tracking-widest uppercase text-foreground/70 hover:text-[#C49A45] transition-colors duration-300"
+                className="font-body text-xs tracking-widest uppercase text-foreground/70 hover:text-[#C49A45] pb-1 border-b border-transparent hover:border-[#C49A45] transition-all duration-200 ease-in-out"
               >
                 {item.label}
               </button>
