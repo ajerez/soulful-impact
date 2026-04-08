@@ -3,6 +3,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import GlitchImage from "../GlitchImage";
 import fotoJuan1 from "@/assets/foto-juan-dirigiendo.jpg";
 import fotoJuan2 from "@/assets/foto-juan-retrato.png";
+import fotoJuan3 from "@/assets/foto-juan-premio.png";
 
 const staggerBlocks = [
   "Diseño espacios que cambian comportamientos.",
