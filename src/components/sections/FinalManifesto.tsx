@@ -33,7 +33,7 @@ const FinalManifesto = ({ onContact }: { onContact?: () => void }) => {
         transition={{ duration: 0.8, delay: 0.8 }}
         className="mt-8"
       >
-        <button onClick={onContact} className="btn-magnetic font-heading px-10 md:px-16 py-5 md:py-6 uppercase tracking-widest" style={{ fontSize: "2rem" }}>
+        <button onClick={onContact} className="btn-magnetic font-heading px-10 md:px-16 uppercase tracking-widest" style={{ fontSize: "2rem", paddingTop: "1rem", paddingBottom: "1rem" }}>
           <span>HABLEMOS</span>
         </button>
       </motion.div>
