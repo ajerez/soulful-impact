@@ -3,6 +3,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import GlitchImage from "../GlitchImage";
 import fotoJuan1 from "@/assets/foto-juan-dirigiendo.jpg";
 import fotoJuan2 from "@/assets/foto-juan-retrato.png";
+import fotoJuan3 from "@/assets/foto-juan-premio.png";
 
 const staggerBlocks = [
   "Diseño espacios que cambian comportamientos.",
@@ -13,6 +14,7 @@ const staggerBlocks = [
 const images = [
   { src: fotoJuan1, alt: "Creative director backstage" },
   { src: fotoJuan2, alt: "Juan A. Gil del Pozo retrato" },
+  { src: fotoJuan3, alt: "Juan A. Gil del Pozo con premio" },
 ];
 
 const IdentitySection = () => {
