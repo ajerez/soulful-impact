@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { X, ArrowRight, Loader2 } from "lucide-react";
-import contactBg from "@/assets/contact-modal-bg.jpg";
+import contactBg from "@/assets/d67af94e-42d3-4ddb-97e5-c49d2364e05c.jpg";
 
 interface ContactModalProps {
   open: boolean;
