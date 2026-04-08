@@ -92,10 +92,11 @@ const IdentitySection = () => {
               transition={{ duration: 1.2 }}
               className="absolute inset-0"
             >
-              <GlitchImage
+              <img
                 src={images[currentImage].src}
                 alt={images[currentImage].alt}
-                className="w-full h-full rounded-sm"
+                className="w-full h-full object-cover object-center contrast-125 rounded-sm"
+                style={{ filter: "grayscale(75%)" }}
               />
             </motion.div>
           </AnimatePresence>
