@@ -16,7 +16,7 @@ const CleanScreen1 = () => {
           style={{ opacity: opacity1 }}
           className="font-heading text-3xl md:text-5xl lg:text-7xl absolute inset-0 flex items-center justify-center px-6"
         >
-          Si todo es experiencia,{"\n"}nada lo es.
+          Si todo es experiencia, nada lo es.
         </motion.p>
         <motion.p
           style={{ opacity: opacity2, scale: scale2 }}
