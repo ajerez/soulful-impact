@@ -13,6 +13,7 @@ const staggerBlocks = [
 const images = [
   { src: fotoJuan1, alt: "Creative director backstage" },
   { src: fotoJuan2, alt: "Juan A. Gil del Pozo retrato" },
+  { src: fotoJuan3, alt: "Juan A. Gil del Pozo con premio" },
 ];
 
 const IdentitySection = () => {
