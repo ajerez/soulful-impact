@@ -18,7 +18,7 @@ const QuestionsSection = () => {
           whileInView={{ opacity: 1, x: 0 }}
           viewport={{ once: true, amount: 0.8 }}
           transition={{ duration: 0.8, delay: i * 0.1 }}
-          className="text-xl md:text-3xl lg:text-4xl font-light text-center max-w-4xl"
+          className="text-lg md:text-2xl font-light text-center max-w-4xl"
         >
           {q}
         </motion.p>

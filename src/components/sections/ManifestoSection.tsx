@@ -17,7 +17,7 @@ const ManifestoSection = () => {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, amount: 0.8 }}
           transition={{ duration: 1, delay: i * 0.15 }}
-          className="text-xl md:text-3xl lg:text-4xl font-light text-center max-w-4xl leading-relaxed"
+          className="text-lg md:text-2xl font-light text-center max-w-4xl leading-relaxed"
         >
           {text}
         </motion.p>

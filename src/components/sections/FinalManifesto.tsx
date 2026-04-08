@@ -19,7 +19,7 @@ const FinalManifesto = ({ onContact }: { onContact?: () => void }) => {
           className={`text-center max-w-4xl leading-relaxed ${
             i === lines.length - 1
               ? "font-heading text-3xl md:text-5xl lg:text-6xl"
-              : "text-xl md:text-3xl lg:text-4xl font-light"
+              : "text-lg md:text-2xl font-light"
           }`}
         >
           {text}
