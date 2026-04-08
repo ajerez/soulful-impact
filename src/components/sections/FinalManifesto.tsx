@@ -32,7 +32,7 @@ const FinalManifesto = ({ onContact }: { onContact?: () => void }) => {
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}
         transition={{ duration: 0.8, delay: 0.8 }}
-        className="mt-8 flex flex-col items-center gap-10"
+        className="mt-8 flex flex-col items-center gap-[70px]"
       >
         <button onClick={onContact} className="btn-magnetic font-heading px-10 md:px-16 uppercase tracking-widest" style={{ fontSize: "2rem", paddingTop: "1rem", paddingBottom: "1rem" }}>
           <span>HABLEMOS</span>
