@@ -174,6 +174,15 @@
   96% { opacity: 1; clip-path: polygon(0 70%, 100% 70%, 100% 90%, 0 90%); transform: translate(-3px, 2px); }
 }
 
+@media (max-width: 767px) {
+  .glitch-futuro,
+  .glitch-futuro::before,
+  .glitch-futuro::after,
+  .neon-flicker-ideas {
+    -webkit-text-stroke-width: 1px;
+  }
+}
+
 /* ── Magnetic Glow CTA ── */
 .btn-magnetic {
   position: relative;
