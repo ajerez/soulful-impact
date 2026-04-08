@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import logoFirma from "@/assets/Logo_firma_Juan.svg";
 
 const lines = [
   "Las experiencias no deberían llenar espacio.",
@@ -31,11 +32,12 @@ const FinalManifesto = ({ onContact }: { onContact?: () => void }) => {
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}
         transition={{ duration: 0.8, delay: 0.8 }}
-        className="mt-8"
+        className="mt-8 flex flex-col items-center gap-10"
       >
         <button onClick={onContact} className="btn-magnetic font-heading px-10 md:px-16 uppercase tracking-widest" style={{ fontSize: "2rem", paddingTop: "1rem", paddingBottom: "1rem" }}>
           <span>HABLEMOS</span>
         </button>
+        <img src={logoFirma} alt="Logo firma" className="h-[80px] w-auto invert opacity-70" />
       </motion.div>
 
     </section>

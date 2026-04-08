@@ -45,10 +45,10 @@ const Header = ({ onContact }: { onContact?: () => void }) => {
           {/* Logo */}
           <button
             onClick={() => scrollTo("top")}
-            className="hover:opacity-80 transition-opacity duration-300 h-9 md:h-11"
+            className="hover:opacity-80 transition-opacity duration-300"
             aria-label="Volver arriba"
           >
-            <img src={logoFirma} alt="Logo" className="h-full w-auto invert" />
+            <img src={logoFirma} alt="Logo" className="h-[30px] w-auto invert" />
           </button>
 
           {/* Desktop nav */}
