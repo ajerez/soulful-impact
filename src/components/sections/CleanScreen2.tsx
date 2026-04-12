@@ -8,7 +8,7 @@ const CleanScreen2 = () => {
 
   return (
     <section ref={ref} className="min-h-[100dvh] flex items-center justify-center smoke-bg px-6">
-      <motion.h2
+      <motion.p
         style={{ letterSpacing: useTransform(tracking, (v) => `${v}em`) }}
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
@@ -17,7 +17,7 @@ const CleanScreen2 = () => {
         className="font-heading text-3xl md:text-5xl lg:text-7xl text-center max-w-5xl leading-tight whitespace-pre-line"
       >
         Diseñar no es decorar.{"\n"}Es decidir qué importa.
-      </motion.h2>
+      </motion.p>
     </section>
   );
 };

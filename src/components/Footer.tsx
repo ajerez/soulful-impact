@@ -9,6 +9,7 @@ const Footer = () => {
         target="_blank"
         rel="noopener noreferrer"
         className="text-muted-foreground uppercase tracking-widest hover:text-foreground transition-colors" style={{ fontSize: '0.75rem' }}
+        aria-label="Perfil de LinkedIn de Juan A. Gil del Pozo"
       >
         LINKEDIN
       </a>

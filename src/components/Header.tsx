@@ -42,17 +42,15 @@ const Header = ({ onContact }: { onContact?: () => void }) => {
         }`}
       >
         <div className="flex items-center justify-between px-6 md:px-12 lg:px-24 h-16">
-          {/* Logo */}
           <button
             onClick={() => scrollTo("top")}
             className="hover:opacity-80 transition-opacity duration-300"
             aria-label="Volver arriba"
           >
-            <img src={logoFirma} alt="Logo" className="h-[30px] w-auto invert" />
+            <img src={logoFirma} alt="Juan A. Gil del Pozo - Logo" className="h-[30px] w-auto invert" />
           </button>
 
-          {/* Desktop nav */}
-          <nav className="hidden md:flex items-center gap-8">
+          <nav aria-label="Navegación principal" className="hidden md:flex items-center gap-8">
             {navItems.map((item) => (
               <button
                 key={item.target}
@@ -64,18 +62,18 @@ const Header = ({ onContact }: { onContact?: () => void }) => {
             ))}
           </nav>
 
-          {/* Mobile hamburger */}
           <button onClick={() => setMenuOpen(true)} className="md:hidden text-foreground" aria-label="Abrir menú">
             <Menu size={24} strokeWidth={1.5} />
           </button>
         </div>
       </header>
 
-      {/* Mobile full-screen overlay */}
       <div
         className={`fixed inset-0 z-[60] bg-black/95 backdrop-blur-lg flex flex-col items-center justify-center gap-10 transition-opacity duration-500 ${
           menuOpen ? "opacity-100 pointer-events-auto" : "opacity-0 pointer-events-none"
         }`}
+        role="dialog"
+        aria-label="Menú de navegación"
       >
         <button
           onClick={() => setMenuOpen(false)}
@@ -85,15 +83,20 @@ const Header = ({ onContact }: { onContact?: () => void }) => {
           <X size={28} strokeWidth={1.5} />
         </button>
 
-        {navItems.map((item) => (
-          <button
-            key={item.target}
-            onClick={() => scrollTo(item.target)}
-            className="font-body text-2xl tracking-widest uppercase text-foreground/80 hover:text-[#C49A45] transition-colors duration-300"
-          >
-            {item.label}
-          </button>
-        ))}
+        <nav aria-label="Navegación móvil">
+          <ul className="flex flex-col items-center gap-10">
+            {navItems.map((item) => (
+              <li key={item.target}>
+                <button
+                  onClick={() => scrollTo(item.target)}
+                  className="font-body text-2xl tracking-widest uppercase text-foreground/80 hover:text-[#C49A45] transition-colors duration-300"
+                >
+                  {item.label}
+                </button>
+              </li>
+            ))}
+          </ul>
+        </nav>
       </div>
     </>
   );

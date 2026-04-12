@@ -13,34 +13,50 @@ const services = [
     desc: "Tu proyecto tiene una grieta. Yo la encuentro y la convierto en el motor del concepto.",
     bg: charlando,
     bgPos: "center",
+    alt: "Sesión de consultoría creativa sobre diseño de experiencias inmersivas",
   },
   {
     title: "Dirección Creativa de Eventos",
     desc: "No organizo citas. Diseño clímax narrativos.",
     bg: costaAzucar,
     bgPos: "top",
+    alt: "Evento inmersivo con dirección creativa de Juan A. Gil del Pozo",
   },
   {
     title: "Diseño Visual",
     desc: "La estética no es un adorno. Es el lenguaje del subconsciente.",
     bg: disenoVisual,
     bgPos: "bottom",
+    alt: "Diseño visual conceptual para experiencia inmersiva",
   },
   {
     title: "Gamificación",
     desc: "Transforma una actividad en una experiencia original y atractiva.",
     bg: gamificacionBg,
     bgPos: "center",
+    alt: "Diseño de gamificación para experiencias interactivas",
   },
-  { title: "Diseño de Espacios", desc: "Lugares que no se visitan. Se habitan.", bg: disenoEspaciosNew, bgPos: "center" },
-  { title: "Escenografía y Decorados", desc: "Viaja a nuevos universos orgánicos y detallados.", bg: disenoEspacios, bgPos: "center" },
+  {
+    title: "Diseño de Espacios",
+    desc: "Lugares que no se visitan. Se habitan.",
+    bg: disenoEspaciosNew,
+    bgPos: "center",
+    alt: "Diseño de espacios inmersivos y arquitectura experiencial",
+  },
+  {
+    title: "Escenografía y Decorados",
+    desc: "Viaja a nuevos universos orgánicos y detallados.",
+    bg: disenoEspacios,
+    bgPos: "center",
+    alt: "Escenografía detallada y decorados para producciones inmersivas",
+  },
 ];
 
-const ServiceCard = ({ title, desc, bg, bgPos }: { title: string; desc: string; bg: string; bgPos: string }) => {
+const ServiceCard = ({ title, desc, bg, bgPos, alt }: { title: string; desc: string; bg: string; bgPos: string; alt: string }) => {
   const [hovered, setHovered] = useState(false);
 
   return (
-    <motion.div
+    <motion.article
       initial={{ opacity: 0, y: 50 }}
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true, amount: 0.3 }}
@@ -57,20 +73,20 @@ const ServiceCard = ({ title, desc, bg, bgPos }: { title: string; desc: string; 
           transform: hovered ? "scale(1.05)" : "scale(1)",
           filter: "grayscale(75%)",
         }}
+        role="img"
+        aria-label={alt}
       />
       {hovered && (
-        <>
-          <div
-            className="absolute inset-0 bg-cover opacity-50"
-            style={{
-              backgroundImage: `url(${bg})`,
-              backgroundPosition: bgPos,
-              mixBlendMode: "multiply",
-              filter: "hue-rotate(90deg) saturate(3)",
-              animation: "glitch-1 0.3s infinite linear",
-            }}
-          />
-        </>
+        <div
+          className="absolute inset-0 bg-cover opacity-50"
+          style={{
+            backgroundImage: `url(${bg})`,
+            backgroundPosition: bgPos,
+            mixBlendMode: "multiply",
+            filter: "hue-rotate(90deg) saturate(3)",
+            animation: "glitch-1 0.3s infinite linear",
+          }}
+        />
       )}
       <div className="absolute inset-0 bg-black/70" />
       <div className="relative z-10 h-full flex flex-col justify-end p-6 md:p-8">
@@ -81,7 +97,7 @@ const ServiceCard = ({ title, desc, bg, bgPos }: { title: string; desc: string; 
           {desc}
         </p>
       </div>
-    </motion.div>
+    </motion.article>
   );
 };
 

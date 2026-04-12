@@ -3,17 +3,19 @@ import heroBg from "@/assets/hero-bg.png";
 
 const HeroSection = ({ onContact }: { onContact?: () => void }) => {
   return (
-    <section className="relative min-h-[110dvh] flex flex-col items-center justify-center px-6 md:px-12">
+    <section aria-label="Hero" className="relative min-h-[110dvh] flex flex-col items-center justify-center px-6 md:px-12">
       <div
         className="absolute inset-0 bg-cover bg-center grayscale pointer-events-none"
         style={{ backgroundImage: `url(${heroBg})`, opacity: 0.1875 }}
+        role="img"
+        aria-label="Fondo abstracto de experiencia inmersiva"
       />
       <div
         className="absolute inset-x-0 bottom-0 pointer-events-none"
         style={{ height: "20%", background: "linear-gradient(to bottom, transparent, black)" }}
       />
       <div className="max-w-4xl text-center space-y-8">
-        <motion.h1
+        <motion.p
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1, delay: 0.2 }}
@@ -23,7 +25,7 @@ const HeroSection = ({ onContact }: { onContact?: () => void }) => {
           <span className="glitch-futuro">
             futuro
           </span>
-        </motion.h1>
+        </motion.p>
 
         <motion.p
           initial={{ opacity: 0, y: 20 }}
