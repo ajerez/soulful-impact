@@ -3,7 +3,7 @@ import GlitchImage from "../GlitchImage";
 import lab01 from "@/assets/lab-01.jpg";
 import lab02 from "@/assets/lab-02.jpg";
 import lab03 from "@/assets/lab-03.jpg";
-import lab04 from "@/assets/lab-04.jpg";
+import lab04 from "@/assets/lab-04-new.jpg";
 import lab05 from "@/assets/lab-05.jpg";
 import lab06 from "@/assets/lab-06.png";
 
