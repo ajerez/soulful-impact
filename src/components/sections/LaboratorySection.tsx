@@ -48,12 +48,15 @@ const LaboratorySection = ({ onContact }: { onContact?: () => void }) => {
         {experiments.map((exp, i) => (
           <motion.div
             key={i}
+            className="group"
             initial={{ opacity: 0, y: 50 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, amount: 0.3 }}
             transition={{ duration: 0.8, delay: i * 0.1 }}
           >
-            <GlitchImage src={exp.src} alt={exp.caption} className="w-full h-64 md:h-80" />
+            <div className="service-hover-corruption relative overflow-hidden w-full h-64 md:h-80">
+              <img src={exp.src} alt={exp.caption} className="w-full h-full object-cover" />
+            </div>
             <p className="font-mono text-xs text-muted-foreground mt-3 tracking-wide">
               {exp.caption}
             </p>
