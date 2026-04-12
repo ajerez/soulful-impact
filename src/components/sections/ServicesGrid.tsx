@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-
+import { useState } from "react";
 import charlando from "@/assets/charlando.jpg";
 import costaAzucar from "@/assets/costa-azucar.png";
 import gamificacionBg from "@/assets/gamificacion-bg.png";
@@ -37,6 +37,8 @@ const services = [
 ];
 
 const ServiceCard = ({ title, desc, bg, bgPos }: { title: string; desc: string; bg: string; bgPos: string }) => {
+  const [hovered, setHovered] = useState(false);
+
   return (
     <motion.div
       initial={{ opacity: 0, y: 50 }}
@@ -44,16 +46,33 @@ const ServiceCard = ({ title, desc, bg, bgPos }: { title: string; desc: string; 
       viewport={{ once: true, amount: 0.3 }}
       transition={{ duration: 0.8 }}
       className="relative h-64 md:h-80 overflow-hidden cursor-pointer group"
+      onMouseEnter={() => setHovered(true)}
+      onMouseLeave={() => setHovered(false)}
     >
-      <div className="service-hover-corruption absolute inset-0">
-        <img
-          src={bg}
-          alt={title}
-          className="w-full h-full object-cover"
-          style={{ objectPosition: bgPos }}
-        />
-      </div>
-      <div className="absolute inset-0 bg-black/70 z-[5]" />
+      <div
+        className="absolute inset-0 bg-cover contrast-125 transition-transform duration-700"
+        style={{
+          backgroundImage: `url(${bg})`,
+          backgroundPosition: bgPos,
+          transform: hovered ? "scale(1.05)" : "scale(1)",
+          filter: "grayscale(75%)",
+        }}
+      />
+      {hovered && (
+        <>
+          <div
+            className="absolute inset-0 bg-cover opacity-50"
+            style={{
+              backgroundImage: `url(${bg})`,
+              backgroundPosition: bgPos,
+              mixBlendMode: "multiply",
+              filter: "hue-rotate(90deg) saturate(3)",
+              animation: "glitch-1 0.3s infinite linear",
+            }}
+          />
+        </>
+      )}
+      <div className="absolute inset-0 bg-black/70" />
       <div className="relative z-10 h-full flex flex-col justify-end p-6 md:p-8">
         <h3 className="font-heading mb-2" style={{ fontSize: "2.8rem" }}>
           {title}
