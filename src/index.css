@@ -397,7 +397,7 @@
 
 /* ── Ochre Corruption Glitch (LABORATORIO cards only) ── */
 .service-hover-corruption img {
-  filter: grayscale(100%) contrast(1.1) brightness(0.8);
+  filter: grayscale(80%) contrast(1.1) brightness(0.8);
   transition: filter 0.3s ease;
 }
 
