@@ -229,6 +229,14 @@
   left: 100%;
 }
 
+@media (max-width: 767px) {
+  .btn-magnetic {
+    border-color: #C49A45;
+    color: #C49A45;
+    box-shadow: 0 0 20px rgba(196, 154, 69, 0.3), inset 0 0 10px rgba(196, 154, 69, 0.2);
+  }
+}
+
 /* Monospace for captions */
 .font-mono {
   font-family: 'Electrolize', monospace;
