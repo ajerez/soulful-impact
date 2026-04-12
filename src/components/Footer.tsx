@@ -1,6 +1,6 @@
 const Footer = () => {
   return (
-    <footer className="py-8 px-8 flex flex-col md:flex-row items-center justify-between gap-2">
+    <footer className="py-8 px-8 flex flex-col md:flex-row items-center md:justify-between gap-2 text-center md:text-left">
       <p className="text-muted-foreground uppercase tracking-widest" style={{ fontSize: '0.75rem' }}>
         © {new Date().getFullYear()} Juan A. Gil Del Pozo · Málaga · Todos los derechos reservados.
       </p>
