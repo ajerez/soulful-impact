@@ -8,17 +8,17 @@ const CleanScreen5 = () => {
 
   return (
     <section ref={ref} className="min-h-[100dvh] flex flex-col items-center justify-center px-6 gap-6 md:gap-8">
-      <h2
+      <p
         className="font-heading text-4xl md:text-7xl lg:text-9xl text-center tracking-tighter outline-text"
       >
         LAS <span className="neon-flicker-ideas">IDEAS</span> SON FÁCILES
-      </h2>
-      <motion.h2
+      </p>
+      <motion.p
         style={{ opacity: fillOpacity }}
         className="font-heading text-4xl md:text-7xl lg:text-9xl text-center tracking-tighter"
       >
         EJECUTARLAS BIEN ES DISEÑO
-      </motion.h2>
+      </motion.p>
     </section>
   );
 };

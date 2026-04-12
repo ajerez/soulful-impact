@@ -16,18 +16,17 @@ const copyLines = [
 ];
 
 const experiments = [
-  { src: lab01, caption: "Experimento 01: Construir tensión sin palabras" },
-  { src: lab02, caption: "Experimento 02: Disolver la frontera entre espectador y escena" },
-  { src: lab03, caption: "Experimento 03: Narrativa a través de la oscuridad" },
-  { src: lab04, caption: "Experimento 04: Provocando la pérdida de la noción del tiempo" },
-  { src: lab06, caption: "Experimento 05: Inmersión sensorial completa" },
-  { src: lab05, caption: "Experimento 06: El espacio como personaje" },
+  { src: lab01, caption: "Experimento 01: Construir tensión sin palabras", alt: "Escenografía inmersiva diseñada para construir tensión narrativa sin diálogos" },
+  { src: lab02, caption: "Experimento 02: Disolver la frontera entre espectador y escena", alt: "Experiencia inmersiva donde el espectador se integra en la escena" },
+  { src: lab03, caption: "Experimento 03: Narrativa a través de la oscuridad", alt: "Diseño de espacio oscuro con narrativa sensorial envolvente" },
+  { src: lab04, caption: "Experimento 04: Provocando la pérdida de la noción del tiempo", alt: "Entorno inmersivo diseñado para alterar la percepción temporal" },
+  { src: lab06, caption: "Experimento 05: Inmersión sensorial completa", alt: "Instalación de inmersión sensorial completa con iluminación dramática" },
+  { src: lab05, caption: "Experimento 06: El espacio como personaje", alt: "Escenografía donde el espacio arquitectónico actúa como personaje narrativo" },
 ];
 
 const LaboratorySection = ({ onContact }: { onContact?: () => void }) => {
   return (
     <section id="laboratorio" className="min-h-[130dvh] px-6 md:px-12 lg:px-24 pt-24 pb-[30rem]">
-      {/* Copy */}
       <div className="max-w-3xl mx-auto mb-20 space-y-6">
         {copyLines.map((line, i) => (
           <motion.p
@@ -43,10 +42,9 @@ const LaboratorySection = ({ onContact }: { onContact?: () => void }) => {
         ))}
       </div>
 
-      {/* Gallery */}
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
         {experiments.map((exp, i) => (
-          <motion.div
+          <motion.article
             key={i}
             className="group"
             initial={{ opacity: 0, y: 50 }}
@@ -55,16 +53,15 @@ const LaboratorySection = ({ onContact }: { onContact?: () => void }) => {
             transition={{ duration: 0.8, delay: i * 0.1 }}
           >
             <div className="service-hover-corruption relative overflow-hidden w-full h-64 md:h-80">
-              <img src={exp.src} alt={exp.caption} className="w-full h-full object-cover" />
+              <img src={exp.src} alt={exp.alt} className="w-full h-full object-cover" />
             </div>
             <p className="font-mono text-xs text-muted-foreground mt-3 tracking-wide">
               {exp.caption}
             </p>
-          </motion.div>
+          </motion.article>
         ))}
       </div>
 
-      {/* Frase + CTA */}
       <motion.p
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}

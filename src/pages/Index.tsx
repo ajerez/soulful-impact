@@ -30,69 +30,71 @@ const Index = () => {
       <Header onContact={openContact} />
       <FilmGrainOverlay />
 
-      <CinematicSection topTransition="none" bottomTransition="none">
-        <HeroSection onContact={openContact} />
-      </CinematicSection>
+      <main>
+        <CinematicSection topTransition="none" bottomTransition="none">
+          <HeroSection onContact={openContact} />
+        </CinematicSection>
 
-      <CinematicSection topTransition="none" bottomTransition="heavy">
-        <CleanScreen1 />
-      </CinematicSection>
+        <CinematicSection topTransition="none" bottomTransition="heavy">
+          <CleanScreen1 />
+        </CinematicSection>
 
-      <CinematicSection topTransition="heavy" bottomTransition="heavy">
-        <AntagonistSection />
-      </CinematicSection>
+        <CinematicSection topTransition="heavy" bottomTransition="heavy">
+          <AntagonistSection />
+        </CinematicSection>
 
-      <CinematicSection topTransition="diagonal" bottomTransition="fade">
-        <IdentitySection />
-      </CinematicSection>
+        <CinematicSection topTransition="diagonal" bottomTransition="fade">
+          <IdentitySection />
+        </CinematicSection>
 
-      <CinematicSection topTransition="fade" bottomTransition="fade">
-        <CleanScreen2 />
-      </CinematicSection>
+        <CinematicSection topTransition="fade" bottomTransition="fade">
+          <CleanScreen2 />
+        </CinematicSection>
 
-      <CinematicSection topTransition="curve" bottomTransition="heavy">
-        <LaboratorySection onContact={openContact} />
-      </CinematicSection>
+        <CinematicSection topTransition="curve" bottomTransition="heavy">
+          <LaboratorySection onContact={openContact} />
+        </CinematicSection>
 
-      <CinematicSection topTransition="fade" bottomTransition="fade">
-        <CleanScreen3 />
-      </CinematicSection>
+        <CinematicSection topTransition="fade" bottomTransition="fade">
+          <CleanScreen3 />
+        </CinematicSection>
 
-      <CinematicSection topTransition="heavy" bottomTransition="heavy">
-        <ManifestoSection />
-      </CinematicSection>
+        <CinematicSection topTransition="heavy" bottomTransition="heavy">
+          <ManifestoSection />
+        </CinematicSection>
 
-      <CinematicSection topTransition="fade" bottomTransition="fade">
-        <CleanScreen4 />
-      </CinematicSection>
+        <CinematicSection topTransition="fade" bottomTransition="fade">
+          <CleanScreen4 />
+        </CinematicSection>
 
-      <CinematicSection topTransition="heavy" bottomTransition="curve">
-        <ServicesGrid />
-      </CinematicSection>
+        <CinematicSection topTransition="heavy" bottomTransition="curve">
+          <ServicesGrid />
+        </CinematicSection>
 
-      <CinematicSection topTransition="fade" bottomTransition="fade">
-        <MethodSection />
-      </CinematicSection>
+        <CinematicSection topTransition="fade" bottomTransition="fade">
+          <MethodSection />
+        </CinematicSection>
 
-      <CinematicSection topTransition="fade" bottomTransition="fade">
-        <CleanScreen5 />
-      </CinematicSection>
+        <CinematicSection topTransition="fade" bottomTransition="fade">
+          <CleanScreen5 />
+        </CinematicSection>
 
-      <CinematicSection topTransition="diagonal" bottomTransition="fade">
-        <QuestionsSection />
-      </CinematicSection>
+        <CinematicSection topTransition="diagonal" bottomTransition="fade">
+          <QuestionsSection />
+        </CinematicSection>
 
-      <CinematicSection topTransition="fade" bottomTransition="heavy">
-        <FinalFilter />
-      </CinematicSection>
+        <CinematicSection topTransition="fade" bottomTransition="heavy">
+          <FinalFilter />
+        </CinematicSection>
 
-      <CinematicSection topTransition="fade" bottomTransition="fade">
-        <CleanScreen6 />
-      </CinematicSection>
+        <CinematicSection topTransition="fade" bottomTransition="fade">
+          <CleanScreen6 />
+        </CinematicSection>
 
-      <CinematicSection topTransition="curve" bottomTransition="none">
-        <FinalManifesto onContact={openContact} />
-      </CinematicSection>
+        <CinematicSection topTransition="curve" bottomTransition="none">
+          <FinalManifesto onContact={openContact} />
+        </CinematicSection>
+      </main>
 
       <Footer />
       <ContactModal open={contactOpen} onClose={() => setContactOpen(false)} />

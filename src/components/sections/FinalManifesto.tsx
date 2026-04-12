@@ -37,9 +37,8 @@ const FinalManifesto = ({ onContact }: { onContact?: () => void }) => {
         <button onClick={onContact} className="btn-magnetic font-heading px-10 md:px-16 uppercase tracking-widest" style={{ fontSize: "2rem", paddingTop: "1rem", paddingBottom: "1rem" }}>
           <span>HABLEMOS</span>
         </button>
-        <img src={logoFirma} alt="Logo firma" className="h-[80px] w-auto invert opacity-70" />
+        <img src={logoFirma} alt="Firma de Juan A. Gil del Pozo" className="h-[80px] w-auto invert opacity-70" />
       </motion.div>
-
     </section>
   );
 };

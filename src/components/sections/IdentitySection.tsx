@@ -12,9 +12,9 @@ const staggerBlocks = [
 ];
 
 const images = [
-  { src: fotoJuan1, alt: "Creative director backstage" },
-  { src: fotoJuan3, alt: "Juan A. Gil del Pozo con premio" },
-  { src: fotoJuan2, alt: "Juan A. Gil del Pozo retrato" },
+  { src: fotoJuan1, alt: "Juan A. Gil del Pozo dirigiendo en un set de producción" },
+  { src: fotoJuan3, alt: "Juan A. Gil del Pozo recibiendo un premio de diseño creativo" },
+  { src: fotoJuan2, alt: "Retrato profesional de Juan A. Gil del Pozo, director creativo" },
 ];
 
 const IdentitySection = () => {
@@ -31,7 +31,7 @@ const IdentitySection = () => {
     <section id="identidad" className="min-h-[110dvh] flex flex-col md:flex-row items-center px-6 md:px-12 lg:px-24 py-24 gap-12 md:gap-16">
       {/* Left - Text */}
       <div className="flex-1 flex flex-col justify-center space-y-8">
-        <motion.h2
+        <motion.h1
           initial={{ opacity: 0, x: -40 }}
           whileInView={{ opacity: 1, x: 0 }}
           viewport={{ once: true }}
@@ -39,9 +39,9 @@ const IdentitySection = () => {
           className="font-heading text-5xl md:text-7xl lg:text-9xl tracking-tighter"
         >
           JUAN A. GIL DEL POZO
-        </motion.h2>
+        </motion.h1>
 
-        <motion.p
+        <motion.h2
           initial={{ opacity: 0, x: -30 }}
           whileInView={{ opacity: 1, x: 0 }}
           viewport={{ once: true }}
@@ -49,7 +49,7 @@ const IdentitySection = () => {
           className="leading-relaxed" style={{ fontSize: "1.5rem", color: "#C49A45" }}
         >
           Director creativo especializado en experiencias inmersivas residente en Torre del Mar (Málaga)
-        </motion.p>
+        </motion.h2>
 
         {staggerBlocks.map((text, i) => (
           <motion.p
