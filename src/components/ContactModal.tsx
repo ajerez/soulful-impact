@@ -83,12 +83,12 @@ const ContactModal = ({ open, onClose }: ContactModalProps) => {
           </div>
 
           {/* Right — Form */}
-          <div className="flex items-center justify-center h-[100dvh] overflow-y-auto p-8 md:p-16">
+          <div className="flex items-center justify-center h-[100dvh] overflow-y-auto px-6 pt-14 pb-6 md:p-16">
             <motion.div
               variants={stagger}
               initial="hidden"
               animate="show"
-              className="w-full max-w-md space-y-8"
+              className="w-full max-w-md space-y-4 md:space-y-8"
             >
               <motion.h2
                 variants={fadeUp}
@@ -120,7 +120,7 @@ const ContactModal = ({ open, onClose }: ContactModalProps) => {
                   variants={stagger}
                   initial="hidden"
                   animate="show"
-                  className="space-y-6"
+                  className="space-y-3 md:space-y-6"
                   onSubmit={handleSubmit}
                 >
                   <input
@@ -167,7 +167,7 @@ const ContactModal = ({ open, onClose }: ContactModalProps) => {
                     />
                   </motion.div>
 
-                  <motion.div variants={fadeUp} className="pt-4">
+                  <motion.div variants={fadeUp} className="pt-2 md:pt-4">
                     <button
                       type="submit"
                       disabled={sending}
