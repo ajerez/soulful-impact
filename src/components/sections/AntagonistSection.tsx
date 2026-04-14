@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 const blocks = [
   "El problema no es la falta de creatividad. Es la falta de alma.",
   "Todo es inmersivo. Todo está optimizado. Nada arriesga. Nada sorprende. Nada permanece.",
-  "El público no quiere más estímulos. Quiere algo que importe.",
+  "La gente no desea más despliegues de efectos. Quiere algo que importe.",
 ];
 
 const AntagonistSection = () => {
