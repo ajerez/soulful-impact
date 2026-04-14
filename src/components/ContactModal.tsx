@@ -51,8 +51,11 @@ const ContactModal = ({ open, onClose }: ContactModalProps) => {
     }
   };
 
-  const inputClass =
-    "w-full bg-transparent border-b border-white/20 py-3 text-white/90 text-lg md:text-2xl placeholder:text-white/40 placeholder:text-lg placeholder:md:text-2xl focus:border-[#C49A45] focus:outline-none transition-colors duration-300 font-body";
+  const inputBase =
+    "w-full bg-transparent border-b py-3 text-lg md:text-2xl placeholder:text-lg placeholder:md:text-2xl focus:border-[#C49A45] focus:outline-none transition-colors duration-300 font-body";
+
+  const getInputClass = (field: string) =>
+    `${inputBase} ${invalidFields.has(field) ? "border-[#a52019] text-[#a52019] placeholder:text-[#a52019]/60" : "border-white/20 text-white/90 placeholder:text-white/40"}`;
 
   const stagger = {
     hidden: {},
