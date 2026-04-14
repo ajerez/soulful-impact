@@ -53,8 +53,6 @@ const services = [
 ];
 
 const ServiceCard = ({ title, desc, bg, bgPos, alt }: { title: string; desc: string; bg: string; bgPos: string; alt: string }) => {
-  const [hovered, setHovered] = useState(false);
-
   return (
     <motion.article
       initial={{ opacity: 0, y: 50 }}
@@ -62,32 +60,15 @@ const ServiceCard = ({ title, desc, bg, bgPos, alt }: { title: string; desc: str
       viewport={{ once: true, amount: 0.3 }}
       transition={{ duration: 0.8 }}
       className="relative h-64 md:h-80 overflow-hidden cursor-pointer group"
-      onMouseEnter={() => setHovered(true)}
-      onMouseLeave={() => setHovered(false)}
     >
-      <div
-        className="absolute inset-0 bg-cover contrast-125 transition-transform duration-700"
-        style={{
-          backgroundImage: `url(${bg})`,
-          backgroundPosition: bgPos,
-          transform: hovered ? "scale(1.05)" : "scale(1)",
-          filter: "grayscale(75%)",
-        }}
-        role="img"
-        aria-label={alt}
-      />
-      {hovered && (
-        <div
-          className="absolute inset-0 bg-cover opacity-50"
-          style={{
-            backgroundImage: `url(${bg})`,
-            backgroundPosition: bgPos,
-            mixBlendMode: "multiply",
-            filter: "hue-rotate(90deg) saturate(3)",
-            animation: "glitch-1 0.3s infinite linear",
-          }}
+      <div className="service-hover-corruption absolute inset-0">
+        <img
+          src={bg}
+          alt={alt}
+          className="w-full h-full object-cover contrast-110 transition-transform duration-700 group-hover:scale-105"
+          style={{ objectPosition: bgPos }}
         />
-      )}
+      </div>
       <div className="absolute inset-0 bg-black/70" />
       <div className="relative z-10 h-full flex flex-col justify-end p-6 md:p-8">
         <h3 className="font-heading mb-2" style={{ fontSize: "2.8rem" }}>
