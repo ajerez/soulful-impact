@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { useState } from "react";
+
 import charlando from "@/assets/charlando.jpg";
 import costaAzucar from "@/assets/costa-azucar.png";
 import gamificacionBg from "@/assets/gamificacion-bg.png";
