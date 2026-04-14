@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import heroBg from "@/assets/hero-bg.png";
+import heroBg from "@/assets/hero-bg.jpg";
 
 const HeroSection = ({ onContact }: { onContact?: () => void }) => {
   return (
