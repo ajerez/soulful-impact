@@ -11,6 +11,7 @@ interface ContactModalProps {
 const ContactModal = ({ open, onClose }: ContactModalProps) => {
   const [submitted, setSubmitted] = useState(false);
   const [sending, setSending] = useState(false);
+  const [invalidFields, setInvalidFields] = useState<Set<string>>(new Set());
 
   useEffect(() => {
     if (open) {
@@ -23,9 +24,19 @@ const ContactModal = ({ open, onClose }: ContactModalProps) => {
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    setSending(true);
     const form = e.currentTarget;
     const data = new FormData(form);
+    const required = ["nombre", "email", "telefono", "mensaje"];
+    const empty = new Set<string>();
+    required.forEach((f) => {
+      if (!data.get(f)?.toString().trim()) empty.add(f);
+    });
+    if (empty.size > 0) {
+      setInvalidFields(empty);
+      return;
+    }
+    setInvalidFields(new Set());
+    setSending(true);
     try {
       await fetch("https://formspree.io/f/xpqokadr", {
         method: "POST",
@@ -40,8 +51,11 @@ const ContactModal = ({ open, onClose }: ContactModalProps) => {
     }
   };
 
-  const inputClass =
-    "w-full bg-transparent border-b border-white/20 py-3 text-white/90 text-lg md:text-2xl placeholder:text-white/40 placeholder:text-lg placeholder:md:text-2xl focus:border-[#C49A45] focus:outline-none transition-colors duration-300 font-body";
+  const inputBase =
+    "w-full bg-transparent border-b py-3 text-lg md:text-2xl placeholder:text-lg placeholder:md:text-2xl focus:border-[#C49A45] focus:outline-none transition-colors duration-300 font-body";
+
+  const getInputClass = (field: string) =>
+    `${inputBase} ${invalidFields.has(field) ? "border-[#a52019] text-[#a52019] placeholder:text-[#a52019]/60" : "border-white/20 text-white/90 placeholder:text-white/40"}`;
 
   const stagger = {
     hidden: {},
@@ -134,7 +148,9 @@ const ContactModal = ({ open, onClose }: ContactModalProps) => {
                       type="text"
                       name="nombre"
                       placeholder="Nombre"
-                      className={inputClass}
+                      required
+                      className={getInputClass("nombre")}
+                      onChange={() => invalidFields.has("nombre") && setInvalidFields(prev => { const n = new Set(prev); n.delete("nombre"); return n; })}
                     />
                   </motion.div>
 
@@ -144,7 +160,8 @@ const ContactModal = ({ open, onClose }: ContactModalProps) => {
                       name="email"
                       placeholder="Email"
                       required
-                      className={inputClass}
+                      className={getInputClass("email")}
+                      onChange={() => invalidFields.has("email") && setInvalidFields(prev => { const n = new Set(prev); n.delete("email"); return n; })}
                     />
                   </motion.div>
 
@@ -153,7 +170,9 @@ const ContactModal = ({ open, onClose }: ContactModalProps) => {
                       type="tel"
                       name="telefono"
                       placeholder="Teléfono"
-                      className={inputClass}
+                      required
+                      className={getInputClass("telefono")}
+                      onChange={() => invalidFields.has("telefono") && setInvalidFields(prev => { const n = new Set(prev); n.delete("telefono"); return n; })}
                     />
                   </motion.div>
 
@@ -163,7 +182,8 @@ const ContactModal = ({ open, onClose }: ContactModalProps) => {
                       placeholder="¿Qué tienes en mente?"
                       required
                       rows={4}
-                      className={`${inputClass} resize-none`}
+                      className={`${getInputClass("mensaje")} resize-none`}
+                      onChange={() => invalidFields.has("mensaje") && setInvalidFields(prev => { const n = new Set(prev); n.delete("mensaje"); return n; })}
                     />
                   </motion.div>
 
