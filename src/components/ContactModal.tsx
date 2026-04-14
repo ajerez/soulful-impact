@@ -150,7 +150,7 @@ const ContactModal = ({ open, onClose }: ContactModalProps) => {
                       placeholder="Nombre"
                       required
                       className={getInputClass("nombre")}
-                      onInvalid={(e) => (e.target as HTMLInputElement).setCustomValidity("Por favor rellene este dato")}
+                      onInvalid={(e) => (e.target as HTMLInputElement).setCustomValidity("Por favor rellene este campo")}
                       onInput={(e) => { (e.target as HTMLInputElement).setCustomValidity(""); invalidFields.has("nombre") && setInvalidFields(prev => { const n = new Set(prev); n.delete("nombre"); return n; }); }}
                     />
                   </motion.div>
@@ -162,7 +162,7 @@ const ContactModal = ({ open, onClose }: ContactModalProps) => {
                       placeholder="Email"
                       required
                       className={getInputClass("email")}
-                      onInvalid={(e) => (e.target as HTMLInputElement).setCustomValidity("Por favor rellene este dato")}
+                      onInvalid={(e) => (e.target as HTMLInputElement).setCustomValidity("Por favor rellene este campo")}
                       onInput={(e) => { (e.target as HTMLInputElement).setCustomValidity(""); invalidFields.has("email") && setInvalidFields(prev => { const n = new Set(prev); n.delete("email"); return n; }); }}
                     />
                   </motion.div>
@@ -174,7 +174,7 @@ const ContactModal = ({ open, onClose }: ContactModalProps) => {
                       placeholder="Teléfono"
                       required
                       className={getInputClass("telefono")}
-                      onInvalid={(e) => (e.target as HTMLInputElement).setCustomValidity("Por favor rellene este dato")}
+                      onInvalid={(e) => (e.target as HTMLInputElement).setCustomValidity("Por favor rellene este campo")}
                       onInput={(e) => { (e.target as HTMLInputElement).setCustomValidity(""); invalidFields.has("telefono") && setInvalidFields(prev => { const n = new Set(prev); n.delete("telefono"); return n; }); }}
                     />
                   </motion.div>
@@ -186,7 +186,7 @@ const ContactModal = ({ open, onClose }: ContactModalProps) => {
                       required
                       rows={4}
                       className={`${getInputClass("mensaje")} resize-none`}
-                      onInvalid={(e) => (e.target as HTMLTextAreaElement).setCustomValidity("Por favor rellene este dato")}
+                      onInvalid={(e) => (e.target as HTMLTextAreaElement).setCustomValidity("Por favor rellene este campo")}
                       onInput={(e) => { (e.target as HTMLTextAreaElement).setCustomValidity(""); invalidFields.has("mensaje") && setInvalidFields(prev => { const n = new Set(prev); n.delete("mensaje"); return n; }); }}
                     />
                   </motion.div>
