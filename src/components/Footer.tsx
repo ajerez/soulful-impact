@@ -8,7 +8,7 @@ const Footer = () => {
         href="https://es.linkedin.com/in/juan-alfonso-gil-del-pozo-604239204"
         target="_blank"
         rel="noopener noreferrer"
-        className="text-muted-foreground uppercase tracking-widest hover:text-foreground transition-colors" style={{ fontSize: '0.75rem' }}
+        className="uppercase tracking-widest hover:text-foreground transition-colors" style={{ fontSize: '0.75rem', color: '#C49A45' }}
         aria-label="Perfil de LinkedIn de Juan A. Gil del Pozo"
       >
         LINKEDIN
