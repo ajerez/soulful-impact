@@ -24,9 +24,19 @@ const ContactModal = ({ open, onClose }: ContactModalProps) => {
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    setSending(true);
     const form = e.currentTarget;
     const data = new FormData(form);
+    const required = ["nombre", "email", "telefono", "mensaje"];
+    const empty = new Set<string>();
+    required.forEach((f) => {
+      if (!data.get(f)?.toString().trim()) empty.add(f);
+    });
+    if (empty.size > 0) {
+      setInvalidFields(empty);
+      return;
+    }
+    setInvalidFields(new Set());
+    setSending(true);
     try {
       await fetch("https://formspree.io/f/xpqokadr", {
         method: "POST",
