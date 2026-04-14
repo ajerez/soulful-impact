@@ -97,7 +97,7 @@ const IdentitySection = () => {
               <img
                 src={images[currentImage].src}
                 alt={images[currentImage].alt}
-                className="w-full h-full object-cover object-center contrast-125 rounded-sm"
+                className="w-full h-full object-cover object-top contrast-125 rounded-sm"
                 style={{ filter: "grayscale(75%)" }}
               />
             </motion.div>
