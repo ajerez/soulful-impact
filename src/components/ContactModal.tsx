@@ -148,7 +148,9 @@ const ContactModal = ({ open, onClose }: ContactModalProps) => {
                       type="text"
                       name="nombre"
                       placeholder="Nombre"
-                      className={inputClass}
+                      required
+                      className={getInputClass("nombre")}
+                      onChange={() => invalidFields.has("nombre") && setInvalidFields(prev => { const n = new Set(prev); n.delete("nombre"); return n; })}
                     />
                   </motion.div>
 
@@ -158,7 +160,8 @@ const ContactModal = ({ open, onClose }: ContactModalProps) => {
                       name="email"
                       placeholder="Email"
                       required
-                      className={inputClass}
+                      className={getInputClass("email")}
+                      onChange={() => invalidFields.has("email") && setInvalidFields(prev => { const n = new Set(prev); n.delete("email"); return n; })}
                     />
                   </motion.div>
 
@@ -167,7 +170,9 @@ const ContactModal = ({ open, onClose }: ContactModalProps) => {
                       type="tel"
                       name="telefono"
                       placeholder="Teléfono"
-                      className={inputClass}
+                      required
+                      className={getInputClass("telefono")}
+                      onChange={() => invalidFields.has("telefono") && setInvalidFields(prev => { const n = new Set(prev); n.delete("telefono"); return n; })}
                     />
                   </motion.div>
 
@@ -177,7 +182,8 @@ const ContactModal = ({ open, onClose }: ContactModalProps) => {
                       placeholder="¿Qué tienes en mente?"
                       required
                       rows={4}
-                      className={`${inputClass} resize-none`}
+                      className={`${getInputClass("mensaje")} resize-none`}
+                      onChange={() => invalidFields.has("mensaje") && setInvalidFields(prev => { const n = new Set(prev); n.delete("mensaje"); return n; })}
                     />
                   </motion.div>
 
