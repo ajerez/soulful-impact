@@ -11,6 +11,7 @@ interface ContactModalProps {
 const ContactModal = ({ open, onClose }: ContactModalProps) => {
   const [submitted, setSubmitted] = useState(false);
   const [sending, setSending] = useState(false);
+  const [invalidFields, setInvalidFields] = useState<Set<string>>(new Set());
 
   useEffect(() => {
     if (open) {
